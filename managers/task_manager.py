@@ -7,20 +7,43 @@ from utils.logger import Logger
 
 class CompressionWorker(QObject):
     finished = pyqtSignal()
-    progress = pyqtSignal(str)
+    progress = pyqtSignal(dict, str)  # item, status
+    error = pyqtSignal(str)
 
-    def __init__(self, directory, file_manager, task_type):
+    def __init__(self, workload, file_manager, task_type):
         super().__init__()
-        self.directory = directory
+        self.workload = workload if workload is not None else []
         self.file_manager = file_manager
         self.task_type = task_type
 
     def run(self):
-        if self.task_type == "images":
-            self.file_manager.compress_images_in_directory(self.directory, progress_callback=self.progress.emit)
-        elif self.task_type == "videos":
-            self.file_manager.compress_videos_in_directory(self.directory, progress_callback=self.progress.emit)
+        if not self.workload:  # Handle empty workload
+            self.finished.emit()
+            return
+            
+        filtered_workload = [item for item in self.workload if item['type'] == self.task_type]
+        
+        if not filtered_workload:  # No files of this type to process
+            self.finished.emit()
+            return
+            
+        if self.task_type == "image":
+            self.file_manager.compress_images_in_directory(
+                filtered_workload,
+                progress_callback=self.handle_progress
+            )
+        elif self.task_type == "video":
+            self.file_manager.compress_videos_in_directory(
+                filtered_workload,
+                progress_callback=self.handle_progress
+            )
         self.finished.emit()
+
+    def handle_progress(self, item, status=None, error_message=None):
+        if error_message:
+            self.error.emit(error_message)
+        elif item:
+            self.progress.emit(item, status)
 
 
 class TaskManager:
@@ -29,6 +52,11 @@ class TaskManager:
         self.file_manager = FileManager(config_manager)
         self.logger = Logger()
 
-    def create_worker(self, directory, task_type):
-        worker = CompressionWorker(directory, self.file_manager, task_type)
+    def get_workload(self, directory):
+        """Get the total workload for processing"""
+        return self.file_manager.get_media_workload(directory)
+
+    def create_worker(self, workload, task_type):
+        """Create a worker for processing files"""
+        worker = CompressionWorker(workload, self.file_manager, task_type)
         return worker
