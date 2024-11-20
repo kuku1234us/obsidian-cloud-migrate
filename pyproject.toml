@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "obsidiancloudmigrate"
+version = "0.1.0"
+description = "Obsidian Cloud Migration Tool"
+authors = ["kothreat <kuku1234us@yahoo.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+boto3 = "^1.35.65"
+python-dotenv = "^1.0.1"
+pyqt6 = "^6.7.1"
+ruamel-yaml = "^0.18.6"
+pillow = "^11.0.0"
+ffmpeg-python = "^0.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

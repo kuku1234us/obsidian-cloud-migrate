@@ -1,0 +1,1 @@
+# Custom Type Declarations For Our App
