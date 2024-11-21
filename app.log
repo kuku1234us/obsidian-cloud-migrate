@@ -1,0 +1,710 @@
+2024-11-21 12:11:53,399 - ObsCloudMigrate - INFO - Initialized task manager with vault: D:/projects
+2024-11-21 12:11:53,399 - ObsCloudMigrate - INFO - Initialized task manager with vault: D:/projects
+2024-11-21 12:11:53,401 - ObsCloudMigrate - INFO - Loading files from directory: D:/projects
+2024-11-21 12:11:53,401 - ObsCloudMigrate - INFO - Loading files from directory: D:/projects
+2024-11-21 12:12:03,707 - ObsCloudMigrate - INFO - Loading files from directory: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:12:03,707 - ObsCloudMigrate - INFO - Loading files from directory: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:12:03,713 - ObsCloudMigrate - INFO - Vault directory updated to: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:12:03,713 - ObsCloudMigrate - INFO - Vault directory updated to: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:12:03,714 - ObsCloudMigrate - INFO - Initialized task manager with vault: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:12:03,714 - ObsCloudMigrate - INFO - Initialized task manager with vault: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:14:01,592 - ObsCloudMigrate - INFO - Progress bar initialized with total work: 45730269 bytes
+2024-11-21 12:14:01,592 - ObsCloudMigrate - INFO - Progress bar initialized with total work: 45730269 bytes
+2024-11-21 12:14:01,594 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:14:01,594 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:14:01,595 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:14:01,595 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:14:03,996 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\2DrM87sSotaE1lQ0U7iw_ukr.mp4
+2024-11-21 12:14:03,996 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\2DrM87sSotaE1lQ0U7iw_ukr.mp4
+2024-11-21 12:14:03,997 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:14:03,997 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:14:04,000 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:14:04,000 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:14:04,001 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:14:04,001 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:14:08,077 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\Zb1AWvfrgDHwHDdxi0Z8_USGMOCT.mp4
+2024-11-21 12:14:08,077 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\Zb1AWvfrgDHwHDdxi0Z8_USGMOCT.mp4
+2024-11-21 12:14:08,077 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:14:08,077 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:14:08,080 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:14:08,080 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:14:08,081 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:14:08,081 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:14:08,102 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\lADE2zm2FRs2bjOfyQXD_IMG_8188.jpg
+2024-11-21 12:14:08,102 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\lADE2zm2FRs2bjOfyQXD_IMG_8188.jpg
+2024-11-21 12:14:08,102 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:14:08,102 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:14:08,103 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:14:08,103 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:14:08,104 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:14:08,104 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:14:08,146 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\YMfckitjJw4fQmtM8sQk_s04.jpg
+2024-11-21 12:14:08,146 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\YMfckitjJw4fQmtM8sQk_s04.jpg
+2024-11-21 12:14:08,147 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:14:08,147 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:14:08,149 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:14:08,149 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:14:08,149 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:14:08,149 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:14:08,208 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\sub\Uhw5tAOJdG18a0ku3eWC_s03.jpg
+2024-11-21 12:14:08,208 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\sub\Uhw5tAOJdG18a0ku3eWC_s03.jpg
+2024-11-21 12:14:08,208 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:14:08,208 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:14:08,211 - ObsCloudMigrate - INFO - All work completed
+2024-11-21 12:14:08,211 - ObsCloudMigrate - INFO - All work completed
+2024-11-21 12:14:08,212 - ObsCloudMigrate - INFO - Starting to search for media links in vault...
+2024-11-21 12:14:08,212 - ObsCloudMigrate - INFO - Starting to search for media links in vault...
+2024-11-21 12:14:08,213 - ObsCloudMigrate - INFO - Starting vault scan for 5 media files in: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:14:08,213 - ObsCloudMigrate - INFO - Starting vault scan for 5 media files in: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:14:08,216 - ObsCloudMigrate - INFO - Found link in Test 2.md for file: USGMOCT.mp4
+2024-11-21 12:14:08,216 - ObsCloudMigrate - INFO - Found link in Test 2.md for file: USGMOCT.mp4
+2024-11-21 12:14:08,216 - ObsCloudMigrate - INFO -   Full match: ![[USGMOCT.mp4]]
+2024-11-21 12:14:08,216 - ObsCloudMigrate - INFO -   Full match: ![[USGMOCT.mp4]]
+2024-11-21 12:14:08,216 - ObsCloudMigrate - INFO -   Position: 0-16
+2024-11-21 12:14:08,216 - ObsCloudMigrate - INFO -   Position: 0-16
+2024-11-21 12:14:08,217 - ObsCloudMigrate - INFO - Found link in Test.md for file: IMG 8188.jpg
+2024-11-21 12:14:08,217 - ObsCloudMigrate - INFO - Found link in Test.md for file: IMG 8188.jpg
+2024-11-21 12:14:08,218 - ObsCloudMigrate - INFO -   Full match: ![[IMG 8188.jpg]]
+2024-11-21 12:14:08,218 - ObsCloudMigrate - INFO -   Full match: ![[IMG 8188.jpg]]
+2024-11-21 12:14:08,218 - ObsCloudMigrate - INFO -   Position: 18-35
+2024-11-21 12:14:08,218 - ObsCloudMigrate - INFO -   Position: 18-35
+2024-11-21 12:14:08,218 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:14:08,218 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:14:08,219 - ObsCloudMigrate - INFO -   Full match: [s04.png](s04.png)
+2024-11-21 12:14:08,219 - ObsCloudMigrate - INFO -   Full match: [s04.png](s04.png)
+2024-11-21 12:14:08,219 - ObsCloudMigrate - INFO -   Position: 36-54
+2024-11-21 12:14:08,219 - ObsCloudMigrate - INFO -   Position: 36-54
+2024-11-21 12:14:08,219 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:14:08,219 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:14:08,220 - ObsCloudMigrate - INFO -   Full match: ![s04.png](s04.png)
+2024-11-21 12:14:08,220 - ObsCloudMigrate - INFO -   Full match: ![s04.png](s04.png)
+2024-11-21 12:14:08,220 - ObsCloudMigrate - INFO -   Position: 74-93
+2024-11-21 12:14:08,220 - ObsCloudMigrate - INFO -   Position: 74-93
+2024-11-21 12:14:08,220 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:14:08,220 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:14:08,220 - ObsCloudMigrate - INFO -   Full match: [[s04.png|A Beautiful Day]]
+2024-11-21 12:14:08,220 - ObsCloudMigrate - INFO -   Full match: [[s04.png|A Beautiful Day]]
+2024-11-21 12:14:08,221 - ObsCloudMigrate - INFO -   Position: 126-153
+2024-11-21 12:14:08,221 - ObsCloudMigrate - INFO -   Position: 126-153
+2024-11-21 12:14:08,221 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:14:08,221 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:14:08,221 - ObsCloudMigrate - INFO -   Full match: ![[s04.png|A Beautiful Day]]
+2024-11-21 12:14:08,221 - ObsCloudMigrate - INFO -   Full match: ![[s04.png|A Beautiful Day]]
+2024-11-21 12:14:08,221 - ObsCloudMigrate - INFO -   Position: 155-183
+2024-11-21 12:14:08,221 - ObsCloudMigrate - INFO -   Position: 155-183
+2024-11-21 12:14:08,221 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:14:08,221 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:14:08,222 - ObsCloudMigrate - INFO -   Full match: ![[s04.png#^blockref]]
+2024-11-21 12:14:08,222 - ObsCloudMigrate - INFO -   Full match: ![[s04.png#^blockref]]
+2024-11-21 12:14:08,222 - ObsCloudMigrate - INFO -   Position: 185-207
+2024-11-21 12:14:08,222 - ObsCloudMigrate - INFO -   Position: 185-207
+2024-11-21 12:14:08,222 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:14:08,222 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:14:08,223 - ObsCloudMigrate - INFO -   Full match: [[s04.png#^blockref]]
+2024-11-21 12:14:08,223 - ObsCloudMigrate - INFO -   Full match: [[s04.png#^blockref]]
+2024-11-21 12:14:08,223 - ObsCloudMigrate - INFO -   Position: 209-230
+2024-11-21 12:14:08,223 - ObsCloudMigrate - INFO -   Position: 209-230
+2024-11-21 12:14:08,223 - ObsCloudMigrate - INFO - Found link in Test.md for file: ukr.mp4
+2024-11-21 12:14:08,223 - ObsCloudMigrate - INFO - Found link in Test.md for file: ukr.mp4
+2024-11-21 12:14:08,223 - ObsCloudMigrate - INFO -   Full match: [[ukr.mp4]]
+2024-11-21 12:14:08,223 - ObsCloudMigrate - INFO -   Full match: [[ukr.mp4]]
+2024-11-21 12:14:08,224 - ObsCloudMigrate - INFO -   Position: 5-16
+2024-11-21 12:14:08,224 - ObsCloudMigrate - INFO -   Position: 5-16
+2024-11-21 12:14:08,224 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:14:08,224 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:14:08,224 - ObsCloudMigrate - INFO -   Full match: ![[sub/s03.jpg]]
+2024-11-21 12:14:08,224 - ObsCloudMigrate - INFO -   Full match: ![[sub/s03.jpg]]
+2024-11-21 12:14:08,225 - ObsCloudMigrate - INFO -   Position: 56-72
+2024-11-21 12:14:08,225 - ObsCloudMigrate - INFO -   Position: 56-72
+2024-11-21 12:14:08,225 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:14:08,225 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:14:08,225 - ObsCloudMigrate - INFO -   Full match: ![some alt text](sub/s03.jpg)
+2024-11-21 12:14:08,225 - ObsCloudMigrate - INFO -   Full match: ![some alt text](sub/s03.jpg)
+2024-11-21 12:14:08,225 - ObsCloudMigrate - INFO -   Position: 95-124
+2024-11-21 12:14:08,225 - ObsCloudMigrate - INFO -   Position: 95-124
+2024-11-21 12:14:08,227 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s04.png
+2024-11-21 12:14:08,227 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s04.png
+2024-11-21 12:14:08,227 - ObsCloudMigrate - INFO -   Full match: ![[s04.png]]
+2024-11-21 12:14:08,227 - ObsCloudMigrate - INFO -   Full match: ![[s04.png]]
+2024-11-21 12:14:08,227 - ObsCloudMigrate - INFO -   Position: 0-12
+2024-11-21 12:14:08,227 - ObsCloudMigrate - INFO -   Position: 0-12
+2024-11-21 12:14:08,227 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s03.jpg
+2024-11-21 12:14:08,227 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s03.jpg
+2024-11-21 12:14:08,228 - ObsCloudMigrate - INFO -   Full match: ![[s03.jpg]]
+2024-11-21 12:14:08,228 - ObsCloudMigrate - INFO -   Full match: ![[s03.jpg]]
+2024-11-21 12:14:08,228 - ObsCloudMigrate - INFO -   Position: 12-24
+2024-11-21 12:14:08,228 - ObsCloudMigrate - INFO -   Position: 12-24
+2024-11-21 12:14:08,228 - ObsCloudMigrate - INFO - Vault scan complete. Found media links in 3 markdown files
+2024-11-21 12:14:08,228 - ObsCloudMigrate - INFO - Vault scan complete. Found media links in 3 markdown files
+2024-11-21 12:14:08,228 - ObsCloudMigrate - INFO - Found 7 media links in 3 markdown files
+2024-11-21 12:14:08,228 - ObsCloudMigrate - INFO - Found 7 media links in 3 markdown files
+2024-11-21 12:14:08,229 - ObsCloudMigrate - INFO - All tasks completed successfully!
+2024-11-21 12:14:08,229 - ObsCloudMigrate - INFO - All tasks completed successfully!
+2024-11-21 12:18:58,104 - ObsCloudMigrate - INFO - Initialized task manager with vault: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:18:58,104 - ObsCloudMigrate - INFO - Initialized task manager with vault: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:18:58,106 - ObsCloudMigrate - INFO - Loading files from directory: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:18:58,106 - ObsCloudMigrate - INFO - Loading files from directory: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:19:07,478 - ObsCloudMigrate - INFO - Progress bar initialized with total work: 45730269 bytes
+2024-11-21 12:19:07,478 - ObsCloudMigrate - INFO - Progress bar initialized with total work: 45730269 bytes
+2024-11-21 12:19:07,480 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:19:07,480 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:19:07,480 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:19:07,480 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:19:10,107 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\Wv710Foki5lTwDBL8pzQ_ukr.mp4
+2024-11-21 12:19:10,107 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\Wv710Foki5lTwDBL8pzQ_ukr.mp4
+2024-11-21 12:19:10,107 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:19:10,107 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:19:10,109 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:19:10,109 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:19:10,110 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:19:10,110 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:19:14,607 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\ndL01RUV0fAvIhVH4Twx_USGMOCT.mp4
+2024-11-21 12:19:14,607 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\ndL01RUV0fAvIhVH4Twx_USGMOCT.mp4
+2024-11-21 12:19:14,608 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:19:14,608 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:19:14,611 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:19:14,611 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:19:14,612 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:19:14,612 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:19:14,632 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\fLQZKj6xKUEHzs3VZtKm_IMG_8188.jpg
+2024-11-21 12:19:14,632 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\fLQZKj6xKUEHzs3VZtKm_IMG_8188.jpg
+2024-11-21 12:19:14,633 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:19:14,633 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:19:14,634 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:19:14,634 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:19:14,635 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:19:14,635 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:19:14,688 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\7yRTQQTC1tu4dGPvqO8z_s04.jpg
+2024-11-21 12:19:14,688 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\7yRTQQTC1tu4dGPvqO8z_s04.jpg
+2024-11-21 12:19:14,688 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:19:14,688 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:19:14,691 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:19:14,691 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:19:14,691 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:19:14,691 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:19:14,751 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\sub\lvAEEEMoSym8oIXHxv9W_s03.jpg
+2024-11-21 12:19:14,751 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\sub\lvAEEEMoSym8oIXHxv9W_s03.jpg
+2024-11-21 12:19:14,752 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:19:14,752 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:19:14,754 - ObsCloudMigrate - INFO - All work completed
+2024-11-21 12:19:14,754 - ObsCloudMigrate - INFO - All work completed
+2024-11-21 12:19:14,756 - ObsCloudMigrate - INFO - Starting to search for media links in vault...
+2024-11-21 12:19:14,756 - ObsCloudMigrate - INFO - Starting to search for media links in vault...
+2024-11-21 12:19:14,757 - ObsCloudMigrate - INFO - Starting vault scan for 5 media files in: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:19:14,757 - ObsCloudMigrate - INFO - Starting vault scan for 5 media files in: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:19:14,760 - ObsCloudMigrate - INFO - Found link in Test 2.md for file: USGMOCT.mp4
+2024-11-21 12:19:14,760 - ObsCloudMigrate - INFO - Found link in Test 2.md for file: USGMOCT.mp4
+2024-11-21 12:19:14,761 - ObsCloudMigrate - INFO -   Full match: ![[USGMOCT.mp4]]
+2024-11-21 12:19:14,761 - ObsCloudMigrate - INFO -   Full match: ![[USGMOCT.mp4]]
+2024-11-21 12:19:14,761 - ObsCloudMigrate - INFO -   Position: 0-16
+2024-11-21 12:19:14,761 - ObsCloudMigrate - INFO -   Position: 0-16
+2024-11-21 12:19:14,762 - ObsCloudMigrate - INFO - Found link in Test.md for file: IMG 8188.jpg
+2024-11-21 12:19:14,762 - ObsCloudMigrate - INFO - Found link in Test.md for file: IMG 8188.jpg
+2024-11-21 12:19:14,763 - ObsCloudMigrate - INFO -   Full match: ![[IMG 8188.jpg]]
+2024-11-21 12:19:14,763 - ObsCloudMigrate - INFO -   Full match: ![[IMG 8188.jpg]]
+2024-11-21 12:19:14,763 - ObsCloudMigrate - INFO -   Position: 18-35
+2024-11-21 12:19:14,763 - ObsCloudMigrate - INFO -   Position: 18-35
+2024-11-21 12:19:14,763 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:19:14,763 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:19:14,764 - ObsCloudMigrate - INFO -   Full match: [s04.png](s04.png)
+2024-11-21 12:19:14,764 - ObsCloudMigrate - INFO -   Full match: [s04.png](s04.png)
+2024-11-21 12:19:14,764 - ObsCloudMigrate - INFO -   Position: 36-54
+2024-11-21 12:19:14,764 - ObsCloudMigrate - INFO -   Position: 36-54
+2024-11-21 12:19:14,764 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:19:14,764 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:19:14,764 - ObsCloudMigrate - INFO -   Full match: ![s04.png](s04.png)
+2024-11-21 12:19:14,764 - ObsCloudMigrate - INFO -   Full match: ![s04.png](s04.png)
+2024-11-21 12:19:14,764 - ObsCloudMigrate - INFO -   Position: 74-93
+2024-11-21 12:19:14,764 - ObsCloudMigrate - INFO -   Position: 74-93
+2024-11-21 12:19:14,765 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:19:14,765 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:19:14,765 - ObsCloudMigrate - INFO -   Full match: [[s04.png|A Beautiful Day]]
+2024-11-21 12:19:14,765 - ObsCloudMigrate - INFO -   Full match: [[s04.png|A Beautiful Day]]
+2024-11-21 12:19:14,765 - ObsCloudMigrate - INFO -   Position: 126-153
+2024-11-21 12:19:14,765 - ObsCloudMigrate - INFO -   Position: 126-153
+2024-11-21 12:19:14,765 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:19:14,765 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:19:14,765 - ObsCloudMigrate - INFO -   Full match: ![[s04.png|A Beautiful Day]]
+2024-11-21 12:19:14,765 - ObsCloudMigrate - INFO -   Full match: ![[s04.png|A Beautiful Day]]
+2024-11-21 12:19:14,766 - ObsCloudMigrate - INFO -   Position: 155-183
+2024-11-21 12:19:14,766 - ObsCloudMigrate - INFO -   Position: 155-183
+2024-11-21 12:19:14,766 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:19:14,766 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:19:14,766 - ObsCloudMigrate - INFO -   Full match: ![[s04.png#^blockref]]
+2024-11-21 12:19:14,766 - ObsCloudMigrate - INFO -   Full match: ![[s04.png#^blockref]]
+2024-11-21 12:19:14,767 - ObsCloudMigrate - INFO -   Position: 185-207
+2024-11-21 12:19:14,767 - ObsCloudMigrate - INFO -   Position: 185-207
+2024-11-21 12:19:14,767 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:19:14,767 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:19:14,767 - ObsCloudMigrate - INFO -   Full match: [[s04.png#^blockref]]
+2024-11-21 12:19:14,767 - ObsCloudMigrate - INFO -   Full match: [[s04.png#^blockref]]
+2024-11-21 12:19:14,767 - ObsCloudMigrate - INFO -   Position: 209-230
+2024-11-21 12:19:14,767 - ObsCloudMigrate - INFO -   Position: 209-230
+2024-11-21 12:19:14,768 - ObsCloudMigrate - INFO - Found link in Test.md for file: ukr.mp4
+2024-11-21 12:19:14,768 - ObsCloudMigrate - INFO - Found link in Test.md for file: ukr.mp4
+2024-11-21 12:19:14,768 - ObsCloudMigrate - INFO -   Full match: [[ukr.mp4]]
+2024-11-21 12:19:14,768 - ObsCloudMigrate - INFO -   Full match: [[ukr.mp4]]
+2024-11-21 12:19:14,768 - ObsCloudMigrate - INFO -   Position: 5-16
+2024-11-21 12:19:14,768 - ObsCloudMigrate - INFO -   Position: 5-16
+2024-11-21 12:19:14,769 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:19:14,769 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:19:14,769 - ObsCloudMigrate - INFO -   Full match: ![[sub/s03.jpg]]
+2024-11-21 12:19:14,769 - ObsCloudMigrate - INFO -   Full match: ![[sub/s03.jpg]]
+2024-11-21 12:19:14,769 - ObsCloudMigrate - INFO -   Position: 56-72
+2024-11-21 12:19:14,769 - ObsCloudMigrate - INFO -   Position: 56-72
+2024-11-21 12:19:14,770 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:19:14,770 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:19:14,770 - ObsCloudMigrate - INFO -   Full match: ![some alt text](sub/s03.jpg)
+2024-11-21 12:19:14,770 - ObsCloudMigrate - INFO -   Full match: ![some alt text](sub/s03.jpg)
+2024-11-21 12:19:14,770 - ObsCloudMigrate - INFO -   Position: 95-124
+2024-11-21 12:19:14,770 - ObsCloudMigrate - INFO -   Position: 95-124
+2024-11-21 12:19:14,771 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s04.png
+2024-11-21 12:19:14,771 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s04.png
+2024-11-21 12:19:14,771 - ObsCloudMigrate - INFO -   Full match: ![[s04.png]]
+2024-11-21 12:19:14,771 - ObsCloudMigrate - INFO -   Full match: ![[s04.png]]
+2024-11-21 12:19:14,771 - ObsCloudMigrate - INFO -   Position: 0-12
+2024-11-21 12:19:14,771 - ObsCloudMigrate - INFO -   Position: 0-12
+2024-11-21 12:19:14,771 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s03.jpg
+2024-11-21 12:19:14,771 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s03.jpg
+2024-11-21 12:19:14,772 - ObsCloudMigrate - INFO -   Full match: ![[s03.jpg]]
+2024-11-21 12:19:14,772 - ObsCloudMigrate - INFO -   Full match: ![[s03.jpg]]
+2024-11-21 12:19:14,772 - ObsCloudMigrate - INFO -   Position: 12-24
+2024-11-21 12:19:14,772 - ObsCloudMigrate - INFO -   Position: 12-24
+2024-11-21 12:19:14,772 - ObsCloudMigrate - INFO - Vault scan complete. Found media links in 3 markdown files
+2024-11-21 12:19:14,772 - ObsCloudMigrate - INFO - Vault scan complete. Found media links in 3 markdown files
+2024-11-21 12:19:14,772 - ObsCloudMigrate - INFO - Found 7 media links in 3 markdown files
+2024-11-21 12:19:14,772 - ObsCloudMigrate - INFO - Found 7 media links in 3 markdown files
+2024-11-21 12:19:14,773 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\Test 2.md
+2024-11-21 12:19:14,773 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\Test 2.md
+2024-11-21 12:19:14,774 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\Test.md
+2024-11-21 12:19:14,774 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\Test.md
+2024-11-21 12:19:14,775 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\sub\Test 3.md
+2024-11-21 12:19:14,775 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\sub\Test 3.md
+2024-11-21 12:19:14,776 - ObsCloudMigrate - INFO - All tasks completed successfully!
+2024-11-21 12:19:14,776 - ObsCloudMigrate - INFO - All tasks completed successfully!
+2024-11-21 12:20:11,558 - ObsCloudMigrate - INFO - Initialized task manager with vault: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:20:11,558 - ObsCloudMigrate - INFO - Initialized task manager with vault: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:20:11,560 - ObsCloudMigrate - INFO - Loading files from directory: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:20:11,560 - ObsCloudMigrate - INFO - Loading files from directory: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:20:13,220 - ObsCloudMigrate - INFO - Progress bar initialized with total work: 45730269 bytes
+2024-11-21 12:20:13,220 - ObsCloudMigrate - INFO - Progress bar initialized with total work: 45730269 bytes
+2024-11-21 12:20:13,223 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:20:13,223 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:20:13,225 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:20:13,225 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:20:15,772 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\HTDsybwPNn9UQsWRKLXU_ukr.mp4
+2024-11-21 12:20:15,772 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\HTDsybwPNn9UQsWRKLXU_ukr.mp4
+2024-11-21 12:20:15,773 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:20:15,773 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:20:15,776 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:20:15,776 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:20:15,776 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:20:15,776 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:20:19,934 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\qus0Y79IzheicScB2Wqk_USGMOCT.mp4
+2024-11-21 12:20:19,934 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\qus0Y79IzheicScB2Wqk_USGMOCT.mp4
+2024-11-21 12:20:19,935 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:20:19,935 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:20:19,937 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:20:19,937 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:20:19,937 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:20:19,937 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:20:19,957 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\C8RvJ1E7Z69qUDD5HpzN_IMG_8188.jpg
+2024-11-21 12:20:19,957 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\C8RvJ1E7Z69qUDD5HpzN_IMG_8188.jpg
+2024-11-21 12:20:19,957 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:20:19,957 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:20:19,957 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:20:19,957 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:20:19,958 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:20:19,958 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:20:19,999 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\zpKK1amWxU1zhpxIQBEc_s04.jpg
+2024-11-21 12:20:19,999 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\zpKK1amWxU1zhpxIQBEc_s04.jpg
+2024-11-21 12:20:20,000 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:20:20,000 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:20:20,002 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:20:20,002 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:20:20,002 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:20:20,002 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:20:20,061 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\sub\uvqACSLIswqwqNyFgVCW_s03.jpg
+2024-11-21 12:20:20,061 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\sub\uvqACSLIswqwqNyFgVCW_s03.jpg
+2024-11-21 12:20:20,062 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:20:20,062 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:20:20,064 - ObsCloudMigrate - INFO - All work completed
+2024-11-21 12:20:20,064 - ObsCloudMigrate - INFO - All work completed
+2024-11-21 12:20:20,067 - ObsCloudMigrate - INFO - Starting to search for media links in vault...
+2024-11-21 12:20:20,067 - ObsCloudMigrate - INFO - Starting to search for media links in vault...
+2024-11-21 12:20:20,067 - ObsCloudMigrate - INFO - Starting vault scan for 5 media files in: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:20:20,067 - ObsCloudMigrate - INFO - Starting vault scan for 5 media files in: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:20:20,070 - ObsCloudMigrate - INFO - Found link in Test 2.md for file: USGMOCT.mp4
+2024-11-21 12:20:20,070 - ObsCloudMigrate - INFO - Found link in Test 2.md for file: USGMOCT.mp4
+2024-11-21 12:20:20,070 - ObsCloudMigrate - INFO -   Full match: ![[USGMOCT.mp4]]
+2024-11-21 12:20:20,070 - ObsCloudMigrate - INFO -   Full match: ![[USGMOCT.mp4]]
+2024-11-21 12:20:20,071 - ObsCloudMigrate - INFO -   Position: 0-16
+2024-11-21 12:20:20,071 - ObsCloudMigrate - INFO -   Position: 0-16
+2024-11-21 12:20:20,072 - ObsCloudMigrate - INFO - Found link in Test.md for file: IMG 8188.jpg
+2024-11-21 12:20:20,072 - ObsCloudMigrate - INFO - Found link in Test.md for file: IMG 8188.jpg
+2024-11-21 12:20:20,072 - ObsCloudMigrate - INFO -   Full match: ![[IMG 8188.jpg]]
+2024-11-21 12:20:20,072 - ObsCloudMigrate - INFO -   Full match: ![[IMG 8188.jpg]]
+2024-11-21 12:20:20,072 - ObsCloudMigrate - INFO -   Position: 18-35
+2024-11-21 12:20:20,072 - ObsCloudMigrate - INFO -   Position: 18-35
+2024-11-21 12:20:20,073 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:20:20,073 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:20:20,073 - ObsCloudMigrate - INFO -   Full match: [s04.png](s04.png)
+2024-11-21 12:20:20,073 - ObsCloudMigrate - INFO -   Full match: [s04.png](s04.png)
+2024-11-21 12:20:20,073 - ObsCloudMigrate - INFO -   Position: 36-54
+2024-11-21 12:20:20,073 - ObsCloudMigrate - INFO -   Position: 36-54
+2024-11-21 12:20:20,074 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:20:20,074 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:20:20,074 - ObsCloudMigrate - INFO -   Full match: ![s04.png](s04.png)
+2024-11-21 12:20:20,074 - ObsCloudMigrate - INFO -   Full match: ![s04.png](s04.png)
+2024-11-21 12:20:20,074 - ObsCloudMigrate - INFO -   Position: 74-93
+2024-11-21 12:20:20,074 - ObsCloudMigrate - INFO -   Position: 74-93
+2024-11-21 12:20:20,074 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:20:20,074 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:20:20,075 - ObsCloudMigrate - INFO -   Full match: [[s04.png|A Beautiful Day]]
+2024-11-21 12:20:20,075 - ObsCloudMigrate - INFO -   Full match: [[s04.png|A Beautiful Day]]
+2024-11-21 12:20:20,075 - ObsCloudMigrate - INFO -   Position: 126-153
+2024-11-21 12:20:20,075 - ObsCloudMigrate - INFO -   Position: 126-153
+2024-11-21 12:20:20,075 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:20:20,075 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:20:20,075 - ObsCloudMigrate - INFO -   Full match: ![[s04.png|A Beautiful Day]]
+2024-11-21 12:20:20,075 - ObsCloudMigrate - INFO -   Full match: ![[s04.png|A Beautiful Day]]
+2024-11-21 12:20:20,075 - ObsCloudMigrate - INFO -   Position: 155-183
+2024-11-21 12:20:20,075 - ObsCloudMigrate - INFO -   Position: 155-183
+2024-11-21 12:20:20,075 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:20:20,075 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:20:20,076 - ObsCloudMigrate - INFO -   Full match: ![[s04.png#^blockref]]
+2024-11-21 12:20:20,076 - ObsCloudMigrate - INFO -   Full match: ![[s04.png#^blockref]]
+2024-11-21 12:20:20,076 - ObsCloudMigrate - INFO -   Position: 185-207
+2024-11-21 12:20:20,076 - ObsCloudMigrate - INFO -   Position: 185-207
+2024-11-21 12:20:20,076 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:20:20,076 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:20:20,076 - ObsCloudMigrate - INFO -   Full match: [[s04.png#^blockref]]
+2024-11-21 12:20:20,076 - ObsCloudMigrate - INFO -   Full match: [[s04.png#^blockref]]
+2024-11-21 12:20:20,076 - ObsCloudMigrate - INFO -   Position: 209-230
+2024-11-21 12:20:20,076 - ObsCloudMigrate - INFO -   Position: 209-230
+2024-11-21 12:20:20,077 - ObsCloudMigrate - INFO - Found link in Test.md for file: ukr.mp4
+2024-11-21 12:20:20,077 - ObsCloudMigrate - INFO - Found link in Test.md for file: ukr.mp4
+2024-11-21 12:20:20,077 - ObsCloudMigrate - INFO -   Full match: [[ukr.mp4]]
+2024-11-21 12:20:20,077 - ObsCloudMigrate - INFO -   Full match: [[ukr.mp4]]
+2024-11-21 12:20:20,077 - ObsCloudMigrate - INFO -   Position: 5-16
+2024-11-21 12:20:20,077 - ObsCloudMigrate - INFO -   Position: 5-16
+2024-11-21 12:20:20,077 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:20:20,077 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:20:20,078 - ObsCloudMigrate - INFO -   Full match: ![[sub/s03.jpg]]
+2024-11-21 12:20:20,078 - ObsCloudMigrate - INFO -   Full match: ![[sub/s03.jpg]]
+2024-11-21 12:20:20,078 - ObsCloudMigrate - INFO -   Position: 56-72
+2024-11-21 12:20:20,078 - ObsCloudMigrate - INFO -   Position: 56-72
+2024-11-21 12:20:20,078 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:20:20,078 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:20:20,079 - ObsCloudMigrate - INFO -   Full match: ![some alt text](sub/s03.jpg)
+2024-11-21 12:20:20,079 - ObsCloudMigrate - INFO -   Full match: ![some alt text](sub/s03.jpg)
+2024-11-21 12:20:20,079 - ObsCloudMigrate - INFO -   Position: 95-124
+2024-11-21 12:20:20,079 - ObsCloudMigrate - INFO -   Position: 95-124
+2024-11-21 12:20:20,080 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s04.png
+2024-11-21 12:20:20,080 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s04.png
+2024-11-21 12:20:20,080 - ObsCloudMigrate - INFO -   Full match: ![[s04.png]]
+2024-11-21 12:20:20,080 - ObsCloudMigrate - INFO -   Full match: ![[s04.png]]
+2024-11-21 12:20:20,080 - ObsCloudMigrate - INFO -   Position: 0-12
+2024-11-21 12:20:20,080 - ObsCloudMigrate - INFO -   Position: 0-12
+2024-11-21 12:20:20,081 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s03.jpg
+2024-11-21 12:20:20,081 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s03.jpg
+2024-11-21 12:20:20,081 - ObsCloudMigrate - INFO -   Full match: ![[s03.jpg]]
+2024-11-21 12:20:20,081 - ObsCloudMigrate - INFO -   Full match: ![[s03.jpg]]
+2024-11-21 12:20:20,081 - ObsCloudMigrate - INFO -   Position: 12-24
+2024-11-21 12:20:20,081 - ObsCloudMigrate - INFO -   Position: 12-24
+2024-11-21 12:20:20,081 - ObsCloudMigrate - INFO - Vault scan complete. Found media links in 3 markdown files
+2024-11-21 12:20:20,081 - ObsCloudMigrate - INFO - Vault scan complete. Found media links in 3 markdown files
+2024-11-21 12:20:20,081 - ObsCloudMigrate - INFO - Found 7 media links in 3 markdown files
+2024-11-21 12:20:20,081 - ObsCloudMigrate - INFO - Found 7 media links in 3 markdown files
+2024-11-21 12:20:20,082 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\Test 2.md
+2024-11-21 12:20:20,082 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\Test 2.md
+2024-11-21 12:20:20,083 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\Test.md
+2024-11-21 12:20:20,083 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\Test.md
+2024-11-21 12:20:20,083 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\sub\Test 3.md
+2024-11-21 12:20:20,083 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\sub\Test 3.md
+2024-11-21 12:20:20,084 - ObsCloudMigrate - INFO - All tasks completed successfully!
+2024-11-21 12:20:20,084 - ObsCloudMigrate - INFO - All tasks completed successfully!
+2024-11-21 12:23:31,278 - ObsCloudMigrate - INFO - Initialized task manager with vault: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:23:31,278 - ObsCloudMigrate - INFO - Initialized task manager with vault: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:23:31,281 - ObsCloudMigrate - INFO - Loading files from directory: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:23:31,281 - ObsCloudMigrate - INFO - Loading files from directory: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:23:33,382 - ObsCloudMigrate - INFO - Progress bar initialized with total work: 45730269 bytes
+2024-11-21 12:23:33,382 - ObsCloudMigrate - INFO - Progress bar initialized with total work: 45730269 bytes
+2024-11-21 12:23:33,386 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:23:33,386 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:23:33,387 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:23:33,387 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:23:35,948 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\ag3zEuixHka7qd4c8MNH_ukr.mp4
+2024-11-21 12:23:35,948 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\ag3zEuixHka7qd4c8MNH_ukr.mp4
+2024-11-21 12:23:35,948 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:23:35,948 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:23:35,950 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:23:35,950 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:23:35,950 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:23:35,950 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:23:40,033 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\wv85ZpHe0ZJsH371m6RK_USGMOCT.mp4
+2024-11-21 12:23:40,033 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\wv85ZpHe0ZJsH371m6RK_USGMOCT.mp4
+2024-11-21 12:23:40,034 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:23:40,034 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:23:40,036 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:23:40,036 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:23:40,037 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:23:40,037 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:23:40,053 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\9RURL988QFHFCl0ymlDq_IMG_8188.jpg
+2024-11-21 12:23:40,053 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\9RURL988QFHFCl0ymlDq_IMG_8188.jpg
+2024-11-21 12:23:40,054 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:23:40,054 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:23:40,055 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:23:40,055 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:23:40,055 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:23:40,055 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:23:40,090 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\aGD4ef9rEpT2M4Bmc3wl_s04.jpg
+2024-11-21 12:23:40,090 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\aGD4ef9rEpT2M4Bmc3wl_s04.jpg
+2024-11-21 12:23:40,091 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:23:40,091 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:23:40,094 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:23:40,094 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:23:40,094 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:23:40,094 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:23:40,154 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\sub\ezgHCkyYNWWNhQL8Ja8l_s03.jpg
+2024-11-21 12:23:40,154 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\sub\ezgHCkyYNWWNhQL8Ja8l_s03.jpg
+2024-11-21 12:23:40,154 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:23:40,154 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:23:40,156 - ObsCloudMigrate - INFO - All work completed
+2024-11-21 12:23:40,156 - ObsCloudMigrate - INFO - All work completed
+2024-11-21 12:23:40,159 - ObsCloudMigrate - INFO - Starting to search for media links in vault...
+2024-11-21 12:23:40,159 - ObsCloudMigrate - INFO - Starting to search for media links in vault...
+2024-11-21 12:23:40,159 - ObsCloudMigrate - INFO - Starting vault scan for 5 media files in: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:23:40,159 - ObsCloudMigrate - INFO - Starting vault scan for 5 media files in: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:23:40,162 - ObsCloudMigrate - INFO - Found link in Test 2.md for file: USGMOCT.mp4
+2024-11-21 12:23:40,162 - ObsCloudMigrate - INFO - Found link in Test 2.md for file: USGMOCT.mp4
+2024-11-21 12:23:40,162 - ObsCloudMigrate - INFO -   Full match: ![[USGMOCT.mp4]]
+2024-11-21 12:23:40,162 - ObsCloudMigrate - INFO -   Full match: ![[USGMOCT.mp4]]
+2024-11-21 12:23:40,163 - ObsCloudMigrate - INFO -   Position: 0-16
+2024-11-21 12:23:40,163 - ObsCloudMigrate - INFO -   Position: 0-16
+2024-11-21 12:23:40,164 - ObsCloudMigrate - INFO - Found link in Test.md for file: IMG 8188.jpg
+2024-11-21 12:23:40,164 - ObsCloudMigrate - INFO - Found link in Test.md for file: IMG 8188.jpg
+2024-11-21 12:23:40,164 - ObsCloudMigrate - INFO -   Full match: ![[IMG 8188.jpg]]
+2024-11-21 12:23:40,164 - ObsCloudMigrate - INFO -   Full match: ![[IMG 8188.jpg]]
+2024-11-21 12:23:40,165 - ObsCloudMigrate - INFO -   Position: 18-35
+2024-11-21 12:23:40,165 - ObsCloudMigrate - INFO -   Position: 18-35
+2024-11-21 12:23:40,165 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:23:40,165 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:23:40,165 - ObsCloudMigrate - INFO -   Full match: [s04.png](s04.png)
+2024-11-21 12:23:40,165 - ObsCloudMigrate - INFO -   Full match: [s04.png](s04.png)
+2024-11-21 12:23:40,165 - ObsCloudMigrate - INFO -   Position: 36-54
+2024-11-21 12:23:40,165 - ObsCloudMigrate - INFO -   Position: 36-54
+2024-11-21 12:23:40,165 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:23:40,165 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:23:40,166 - ObsCloudMigrate - INFO -   Full match: ![s04.png](s04.png)
+2024-11-21 12:23:40,166 - ObsCloudMigrate - INFO -   Full match: ![s04.png](s04.png)
+2024-11-21 12:23:40,166 - ObsCloudMigrate - INFO -   Position: 74-93
+2024-11-21 12:23:40,166 - ObsCloudMigrate - INFO -   Position: 74-93
+2024-11-21 12:23:40,166 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:23:40,166 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:23:40,168 - ObsCloudMigrate - INFO -   Full match: [[s04.png|A Beautiful Day]]
+2024-11-21 12:23:40,168 - ObsCloudMigrate - INFO -   Full match: [[s04.png|A Beautiful Day]]
+2024-11-21 12:23:40,168 - ObsCloudMigrate - INFO -   Position: 126-153
+2024-11-21 12:23:40,168 - ObsCloudMigrate - INFO -   Position: 126-153
+2024-11-21 12:23:40,168 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:23:40,168 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:23:40,168 - ObsCloudMigrate - INFO -   Full match: ![[s04.png|A Beautiful Day]]
+2024-11-21 12:23:40,168 - ObsCloudMigrate - INFO -   Full match: ![[s04.png|A Beautiful Day]]
+2024-11-21 12:23:40,168 - ObsCloudMigrate - INFO -   Position: 155-183
+2024-11-21 12:23:40,168 - ObsCloudMigrate - INFO -   Position: 155-183
+2024-11-21 12:23:40,168 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:23:40,168 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:23:40,169 - ObsCloudMigrate - INFO -   Full match: ![[s04.png#^blockref]]
+2024-11-21 12:23:40,169 - ObsCloudMigrate - INFO -   Full match: ![[s04.png#^blockref]]
+2024-11-21 12:23:40,169 - ObsCloudMigrate - INFO -   Position: 185-207
+2024-11-21 12:23:40,169 - ObsCloudMigrate - INFO -   Position: 185-207
+2024-11-21 12:23:40,169 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:23:40,169 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:23:40,170 - ObsCloudMigrate - INFO -   Full match: [[s04.png#^blockref]]
+2024-11-21 12:23:40,170 - ObsCloudMigrate - INFO -   Full match: [[s04.png#^blockref]]
+2024-11-21 12:23:40,170 - ObsCloudMigrate - INFO -   Position: 209-230
+2024-11-21 12:23:40,170 - ObsCloudMigrate - INFO -   Position: 209-230
+2024-11-21 12:23:40,170 - ObsCloudMigrate - INFO - Found link in Test.md for file: ukr.mp4
+2024-11-21 12:23:40,170 - ObsCloudMigrate - INFO - Found link in Test.md for file: ukr.mp4
+2024-11-21 12:23:40,171 - ObsCloudMigrate - INFO -   Full match: [[ukr.mp4]]
+2024-11-21 12:23:40,171 - ObsCloudMigrate - INFO -   Full match: [[ukr.mp4]]
+2024-11-21 12:23:40,171 - ObsCloudMigrate - INFO -   Position: 5-16
+2024-11-21 12:23:40,171 - ObsCloudMigrate - INFO -   Position: 5-16
+2024-11-21 12:23:40,171 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:23:40,171 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:23:40,172 - ObsCloudMigrate - INFO -   Full match: ![[sub/s03.jpg]]
+2024-11-21 12:23:40,172 - ObsCloudMigrate - INFO -   Full match: ![[sub/s03.jpg]]
+2024-11-21 12:23:40,172 - ObsCloudMigrate - INFO -   Position: 56-72
+2024-11-21 12:23:40,172 - ObsCloudMigrate - INFO -   Position: 56-72
+2024-11-21 12:23:40,172 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:23:40,172 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:23:40,172 - ObsCloudMigrate - INFO -   Full match: ![some alt text](sub/s03.jpg)
+2024-11-21 12:23:40,172 - ObsCloudMigrate - INFO -   Full match: ![some alt text](sub/s03.jpg)
+2024-11-21 12:23:40,173 - ObsCloudMigrate - INFO -   Position: 95-124
+2024-11-21 12:23:40,173 - ObsCloudMigrate - INFO -   Position: 95-124
+2024-11-21 12:23:40,173 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s04.png
+2024-11-21 12:23:40,173 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s04.png
+2024-11-21 12:23:40,174 - ObsCloudMigrate - INFO -   Full match: ![[s04.png]]
+2024-11-21 12:23:40,174 - ObsCloudMigrate - INFO -   Full match: ![[s04.png]]
+2024-11-21 12:23:40,174 - ObsCloudMigrate - INFO -   Position: 0-12
+2024-11-21 12:23:40,174 - ObsCloudMigrate - INFO -   Position: 0-12
+2024-11-21 12:23:40,174 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s03.jpg
+2024-11-21 12:23:40,174 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s03.jpg
+2024-11-21 12:23:40,174 - ObsCloudMigrate - INFO -   Full match: ![[s03.jpg]]
+2024-11-21 12:23:40,174 - ObsCloudMigrate - INFO -   Full match: ![[s03.jpg]]
+2024-11-21 12:23:40,175 - ObsCloudMigrate - INFO -   Position: 12-24
+2024-11-21 12:23:40,175 - ObsCloudMigrate - INFO -   Position: 12-24
+2024-11-21 12:23:40,175 - ObsCloudMigrate - INFO - Vault scan complete. Found media links in 3 markdown files
+2024-11-21 12:23:40,175 - ObsCloudMigrate - INFO - Vault scan complete. Found media links in 3 markdown files
+2024-11-21 12:23:40,175 - ObsCloudMigrate - INFO - Found 7 media links in 3 markdown files
+2024-11-21 12:23:40,175 - ObsCloudMigrate - INFO - Found 7 media links in 3 markdown files
+2024-11-21 12:23:40,176 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\Test 2.md
+2024-11-21 12:23:40,176 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\Test 2.md
+2024-11-21 12:23:40,177 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\Test.md
+2024-11-21 12:23:40,177 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\Test.md
+2024-11-21 12:23:40,178 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\sub\Test 3.md
+2024-11-21 12:23:40,178 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\sub\Test 3.md
+2024-11-21 12:23:40,179 - ObsCloudMigrate - INFO - All tasks completed successfully!
+2024-11-21 12:23:40,179 - ObsCloudMigrate - INFO - All tasks completed successfully!
+2024-11-21 12:42:59,249 - ObsCloudMigrate - INFO - Initialized task manager with vault: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:42:59,249 - ObsCloudMigrate - INFO - Initialized task manager with vault: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:42:59,251 - ObsCloudMigrate - INFO - Loading files from directory: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:42:59,251 - ObsCloudMigrate - INFO - Loading files from directory: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:43:02,281 - ObsCloudMigrate - INFO - Progress bar initialized with total work: 45730269 bytes
+2024-11-21 12:43:02,281 - ObsCloudMigrate - INFO - Progress bar initialized with total work: 45730269 bytes
+2024-11-21 12:43:02,282 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:43:02,282 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:43:02,283 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:43:02,283 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:43:04,852 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\kxpbktOOHbCxsEl6ekB3_ukr.mp4
+2024-11-21 12:43:04,852 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\kxpbktOOHbCxsEl6ekB3_ukr.mp4
+2024-11-21 12:43:04,852 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:43:04,852 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\ukr.mp4
+2024-11-21 12:43:04,855 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:43:04,855 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:43:04,855 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:43:04,855 - ObsCloudMigrate - INFO - Starting to process video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:43:09,078 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\S2ILSkoZdpHVuCtjQyhZ_USGMOCT.mp4
+2024-11-21 12:43:09,078 - ObsCloudMigrate - INFO - Compressed and saved video: D:/projects/obsidiancloudmigrate/test-vault\S2ILSkoZdpHVuCtjQyhZ_USGMOCT.mp4
+2024-11-21 12:43:09,079 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:43:09,079 - ObsCloudMigrate - INFO - Completed processing video: D:/projects/obsidiancloudmigrate/test-vault\USGMOCT.mp4
+2024-11-21 12:43:09,082 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:43:09,082 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:43:09,083 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:43:09,083 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:43:09,105 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\jP5VVZTQVFKuMqnFLkTb_IMG_8188.jpg
+2024-11-21 12:43:09,105 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\jP5VVZTQVFKuMqnFLkTb_IMG_8188.jpg
+2024-11-21 12:43:09,105 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:43:09,105 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\IMG 8188.jpg
+2024-11-21 12:43:09,106 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:43:09,106 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:43:09,107 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:43:09,107 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:43:09,143 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\aRkMlsoC5sWTVJp2MC8G_s04.jpg
+2024-11-21 12:43:09,143 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\aRkMlsoC5sWTVJp2MC8G_s04.jpg
+2024-11-21 12:43:09,144 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:43:09,144 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\s04.png
+2024-11-21 12:43:09,146 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:43:09,146 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:43:09,147 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:43:09,147 - ObsCloudMigrate - INFO - Starting to process image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:43:09,203 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\sub\MOQANnfwRkVAZtQx3TKZ_s03.jpg
+2024-11-21 12:43:09,203 - ObsCloudMigrate - INFO - Compressed and saved image: D:/projects/obsidiancloudmigrate/test-vault\sub\MOQANnfwRkVAZtQx3TKZ_s03.jpg
+2024-11-21 12:43:09,203 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:43:09,203 - ObsCloudMigrate - INFO - Completed processing image: D:/projects/obsidiancloudmigrate/test-vault\sub\s03.jpg
+2024-11-21 12:43:09,205 - ObsCloudMigrate - INFO - All work completed
+2024-11-21 12:43:09,205 - ObsCloudMigrate - INFO - All work completed
+2024-11-21 12:43:09,206 - ObsCloudMigrate - INFO - Starting to search for media links in vault...
+2024-11-21 12:43:09,206 - ObsCloudMigrate - INFO - Starting to search for media links in vault...
+2024-11-21 12:43:09,206 - ObsCloudMigrate - INFO - Starting vault scan for 5 media files in: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:43:09,206 - ObsCloudMigrate - INFO - Starting vault scan for 5 media files in: D:/projects/obsidiancloudmigrate/test-vault
+2024-11-21 12:43:09,208 - ObsCloudMigrate - INFO - Found link in Test 2.md for file: USGMOCT.mp4
+2024-11-21 12:43:09,208 - ObsCloudMigrate - INFO - Found link in Test 2.md for file: USGMOCT.mp4
+2024-11-21 12:43:09,208 - ObsCloudMigrate - INFO -   Full match: ![[USGMOCT.mp4]]
+2024-11-21 12:43:09,208 - ObsCloudMigrate - INFO -   Full match: ![[USGMOCT.mp4]]
+2024-11-21 12:43:09,208 - ObsCloudMigrate - INFO -   Position: 0-16
+2024-11-21 12:43:09,208 - ObsCloudMigrate - INFO -   Position: 0-16
+2024-11-21 12:43:09,210 - ObsCloudMigrate - INFO - Found link in Test.md for file: IMG 8188.jpg
+2024-11-21 12:43:09,210 - ObsCloudMigrate - INFO - Found link in Test.md for file: IMG 8188.jpg
+2024-11-21 12:43:09,210 - ObsCloudMigrate - INFO -   Full match: ![[IMG 8188.jpg]]
+2024-11-21 12:43:09,210 - ObsCloudMigrate - INFO -   Full match: ![[IMG 8188.jpg]]
+2024-11-21 12:43:09,210 - ObsCloudMigrate - INFO -   Position: 18-35
+2024-11-21 12:43:09,210 - ObsCloudMigrate - INFO -   Position: 18-35
+2024-11-21 12:43:09,210 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:43:09,210 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:43:09,211 - ObsCloudMigrate - INFO -   Full match: [s04.png](s04.png)
+2024-11-21 12:43:09,211 - ObsCloudMigrate - INFO -   Full match: [s04.png](s04.png)
+2024-11-21 12:43:09,211 - ObsCloudMigrate - INFO -   Position: 36-54
+2024-11-21 12:43:09,211 - ObsCloudMigrate - INFO -   Position: 36-54
+2024-11-21 12:43:09,211 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:43:09,211 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:43:09,211 - ObsCloudMigrate - INFO -   Full match: ![s04.png](s04.png)
+2024-11-21 12:43:09,211 - ObsCloudMigrate - INFO -   Full match: ![s04.png](s04.png)
+2024-11-21 12:43:09,211 - ObsCloudMigrate - INFO -   Position: 74-93
+2024-11-21 12:43:09,211 - ObsCloudMigrate - INFO -   Position: 74-93
+2024-11-21 12:43:09,211 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:43:09,211 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:43:09,212 - ObsCloudMigrate - INFO -   Full match: [[s04.png|A Beautiful Day]]
+2024-11-21 12:43:09,212 - ObsCloudMigrate - INFO -   Full match: [[s04.png|A Beautiful Day]]
+2024-11-21 12:43:09,212 - ObsCloudMigrate - INFO -   Position: 126-153
+2024-11-21 12:43:09,212 - ObsCloudMigrate - INFO -   Position: 126-153
+2024-11-21 12:43:09,212 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:43:09,212 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:43:09,212 - ObsCloudMigrate - INFO -   Full match: ![[s04.png|A Beautiful Day]]
+2024-11-21 12:43:09,212 - ObsCloudMigrate - INFO -   Full match: ![[s04.png|A Beautiful Day]]
+2024-11-21 12:43:09,212 - ObsCloudMigrate - INFO -   Position: 155-183
+2024-11-21 12:43:09,212 - ObsCloudMigrate - INFO -   Position: 155-183
+2024-11-21 12:43:09,212 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:43:09,212 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:43:09,213 - ObsCloudMigrate - INFO -   Full match: ![[s04.png#^blockref]]
+2024-11-21 12:43:09,213 - ObsCloudMigrate - INFO -   Full match: ![[s04.png#^blockref]]
+2024-11-21 12:43:09,213 - ObsCloudMigrate - INFO -   Position: 185-207
+2024-11-21 12:43:09,213 - ObsCloudMigrate - INFO -   Position: 185-207
+2024-11-21 12:43:09,213 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:43:09,213 - ObsCloudMigrate - INFO - Found link in Test.md for file: s04.png
+2024-11-21 12:43:09,213 - ObsCloudMigrate - INFO -   Full match: [[s04.png#^blockref]]
+2024-11-21 12:43:09,213 - ObsCloudMigrate - INFO -   Full match: [[s04.png#^blockref]]
+2024-11-21 12:43:09,214 - ObsCloudMigrate - INFO -   Position: 209-230
+2024-11-21 12:43:09,214 - ObsCloudMigrate - INFO -   Position: 209-230
+2024-11-21 12:43:09,214 - ObsCloudMigrate - INFO - Found link in Test.md for file: ukr.mp4
+2024-11-21 12:43:09,214 - ObsCloudMigrate - INFO - Found link in Test.md for file: ukr.mp4
+2024-11-21 12:43:09,215 - ObsCloudMigrate - INFO -   Full match: [[ukr.mp4]]
+2024-11-21 12:43:09,215 - ObsCloudMigrate - INFO -   Full match: [[ukr.mp4]]
+2024-11-21 12:43:09,215 - ObsCloudMigrate - INFO -   Position: 5-16
+2024-11-21 12:43:09,215 - ObsCloudMigrate - INFO -   Position: 5-16
+2024-11-21 12:43:09,215 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:43:09,215 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:43:09,216 - ObsCloudMigrate - INFO -   Full match: ![[sub/s03.jpg]]
+2024-11-21 12:43:09,216 - ObsCloudMigrate - INFO -   Full match: ![[sub/s03.jpg]]
+2024-11-21 12:43:09,216 - ObsCloudMigrate - INFO -   Position: 56-72
+2024-11-21 12:43:09,216 - ObsCloudMigrate - INFO -   Position: 56-72
+2024-11-21 12:43:09,216 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:43:09,216 - ObsCloudMigrate - INFO - Found link in Test.md for file: s03.jpg
+2024-11-21 12:43:09,216 - ObsCloudMigrate - INFO -   Full match: ![some alt text](sub/s03.jpg)
+2024-11-21 12:43:09,216 - ObsCloudMigrate - INFO -   Full match: ![some alt text](sub/s03.jpg)
+2024-11-21 12:43:09,216 - ObsCloudMigrate - INFO -   Position: 95-124
+2024-11-21 12:43:09,216 - ObsCloudMigrate - INFO -   Position: 95-124
+2024-11-21 12:43:09,217 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s04.png
+2024-11-21 12:43:09,217 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s04.png
+2024-11-21 12:43:09,217 - ObsCloudMigrate - INFO -   Full match: ![[s04.png]]
+2024-11-21 12:43:09,217 - ObsCloudMigrate - INFO -   Full match: ![[s04.png]]
+2024-11-21 12:43:09,217 - ObsCloudMigrate - INFO -   Position: 0-12
+2024-11-21 12:43:09,217 - ObsCloudMigrate - INFO -   Position: 0-12
+2024-11-21 12:43:09,217 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s03.jpg
+2024-11-21 12:43:09,217 - ObsCloudMigrate - INFO - Found link in sub\Test 3.md for file: s03.jpg
+2024-11-21 12:43:09,217 - ObsCloudMigrate - INFO -   Full match: ![[s03.jpg]]
+2024-11-21 12:43:09,217 - ObsCloudMigrate - INFO -   Full match: ![[s03.jpg]]
+2024-11-21 12:43:09,218 - ObsCloudMigrate - INFO -   Position: 12-24
+2024-11-21 12:43:09,218 - ObsCloudMigrate - INFO -   Position: 12-24
+2024-11-21 12:43:09,218 - ObsCloudMigrate - INFO - Vault scan complete. Found media links in 3 markdown files
+2024-11-21 12:43:09,218 - ObsCloudMigrate - INFO - Vault scan complete. Found media links in 3 markdown files
+2024-11-21 12:43:09,218 - ObsCloudMigrate - INFO - Found 7 media links in 3 markdown files
+2024-11-21 12:43:09,218 - ObsCloudMigrate - INFO - Found 7 media links in 3 markdown files
+2024-11-21 12:43:09,219 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\Test 2.md
+2024-11-21 12:43:09,219 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\Test 2.md
+2024-11-21 12:43:09,220 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\Test.md
+2024-11-21 12:43:09,220 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\Test.md
+2024-11-21 12:43:09,221 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\sub\Test 3.md
+2024-11-21 12:43:09,221 - ObsCloudMigrate - INFO - Successfully updated links in: D:/projects/obsidiancloudmigrate/test-vault\sub\Test 3.md
+2024-11-21 12:43:09,221 - ObsCloudMigrate - INFO - All tasks completed successfully!
+2024-11-21 12:43:09,221 - ObsCloudMigrate - INFO - All tasks completed successfully!

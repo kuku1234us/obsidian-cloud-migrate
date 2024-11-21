@@ -1,14 +1,12 @@
 # managers/task_manager.py
 
 import os
-import logging
 from PyQt6.QtCore import QObject, pyqtSignal, QThread
 from managers.file_manager import FileManager
 from managers.link_manager import LinkManager
 from managers.sound_manager import SoundManager
 from utils.logger import Logger
-
-logger = logging.getLogger('ObsCloudMigrate')
+from managers.config_manager import ConfigManager
 
 class TaskManager(QObject):
     progress = pyqtSignal(dict, str)  # item, status
@@ -16,10 +14,10 @@ class TaskManager(QObject):
     task_completed = pyqtSignal(str)  # task_type
     all_tasks_completed = pyqtSignal()
 
-    def __init__(self, config_manager):
+    def __init__(self):
         super().__init__()
-        self.config_manager = config_manager
-        self.file_manager = FileManager(config_manager)
+        self.config_manager = ConfigManager()
+        self.file_manager = FileManager()
         self.sound_manager = SoundManager()
         self.link_manager = None
         self.workload = None
@@ -29,7 +27,7 @@ class TaskManager(QObject):
         """Initialize managers with vault path"""
         self.vault_path = vault_path
         self.link_manager = LinkManager(vault_path)
-        logger.info(f"Initialized task manager with vault: {vault_path}")
+        self.logger.info(f"Initialized task manager with vault: {vault_path}")
 
     def get_workload(self, directory):
         """Get the total workload for processing"""
@@ -38,14 +36,14 @@ class TaskManager(QObject):
     def start_processing(self):
         """Start the media processing workflow"""
         if not hasattr(self, 'vault_path'):
-            logger.error("No vault directory selected")
+            self.logger.error("No vault directory selected")
             self.error.emit("No vault directory selected")
             return
 
         # Get workload
         self.workload = self.file_manager.get_media_workload(self.vault_path)
         if not self.workload:
-            logger.info("No media files found in vault")
+            self.logger.info("No media files found in vault")
             self.error.emit("No media files found in vault")
             return
 
@@ -69,18 +67,37 @@ class TaskManager(QObject):
         self.image_worker.start()
 
     def search_media_links(self):
-        """Search for media links in markdown files"""
+        """Search for media links in markdown files and replace them with external URLs"""
         if not self.link_manager or not self.workload:
-            logger.error("Link manager not initialized or no workload available")
+            self.logger.error("Link manager not initialized or no workload available")
             return
 
-        logger.info("Starting to search for media links in vault...")
+        self.logger.info("Starting to search for media links in vault...")
         results = self.link_manager.scan_vault(self.workload)
         
-        # Log summary
+        # Log summary of found links
         total_files = len(results)
         total_links = sum(len(file_results) for file_results in results.values())
-        logger.info(f"Found {total_links} media links in {total_files} markdown files")
+        self.logger.info(f"Found {total_links} media links in {total_files} markdown files")
+
+        # Create mapping of original filenames to their compressed versions
+        media_mapping = {}
+        for item in self.workload:
+            original_name = os.path.basename(item['path'])
+            # Extract the compressed filename from the path
+            compressed_path = os.path.join(os.path.dirname(item['path']), 
+                item.get('compressed_filename', ''))
+            if os.path.exists(compressed_path):
+                compressed_name = os.path.basename(compressed_path)
+                media_mapping[original_name] = compressed_name
+
+        # Replace links in each markdown file
+        for markdown_file, file_results in results.items():
+            success, message = self.link_manager.replace_media_links(markdown_file, media_mapping)
+            if success:
+                self.logger.info(f"Successfully updated links in: {markdown_file}")
+            else:
+                self.logger.error(f"Failed to update links in {markdown_file}: {message}")
 
         # Play completion sound
         self.sound_manager.play_complete()

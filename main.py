@@ -28,7 +28,7 @@ def main():
     theme_manager.apply_theme()
     
     # Initialize task manager
-    task_manager = TaskManager(config_manager)
+    task_manager = TaskManager()
     
     # Create and show main window
     main_window = MainWindow(config_manager, task_manager)

@@ -11,9 +11,10 @@ with rotating file handler to manage log file sizes.
 Usage:
     from utils.logger import Logger
     
-    logger = Logger()
-    logger.info("This is an information message")
-    logger.error("This is an error message")
+    class YourClass:
+        def __init__(self):
+            self.logger = Logger()
+            self.logger.info("This is an information message")
 
 Configuration:
     Logging settings (level and file path) are read from the application's config file.
@@ -38,10 +39,10 @@ class Logger:
         if self._initialized:
             return
         self._initialized = True
-        self.logger = logging.getLogger("ObsCloudMigrate")
+        self._logger = logging.getLogger("ObsCloudMigrate")
 
     def setup_logger(self, config):
-        if self.logger.handlers:
+        if self._logger.handlers:
             return  # Logger is already set up
         log_level = config.get("logging", {}).get("level", "INFO")
         log_file = config.get("logging", {}).get("file", "app.log")
@@ -58,7 +59,7 @@ class Logger:
                 f.write("")  # Clear the file
 
         # Set the logging level
-        self.logger.setLevel(getattr(logging, log_level))
+        self._logger.setLevel(getattr(logging, log_level))
 
         # Create handlers
         console_handler = logging.StreamHandler()
@@ -79,20 +80,20 @@ class Logger:
         file_handler.setFormatter(formatter)
 
         # Add handlers to the logger
-        self.logger.addHandler(console_handler)
-        self.logger.addHandler(file_handler)
+        self._logger.addHandler(console_handler)
+        self._logger.addHandler(file_handler)
 
     def debug(self, message):
-        self.logger.debug(message)
+        self._logger.debug(message)
 
     def info(self, message):
-        self.logger.info(message)
+        self._logger.info(message)
 
     def warning(self, message):
-        self.logger.warning(message)
+        self._logger.warning(message)
 
     def error(self, message):
-        self.logger.error(message)
+        self._logger.error(message)
 
     def critical(self, message):
-        self.logger.critical(message)
+        self._logger.critical(message)
