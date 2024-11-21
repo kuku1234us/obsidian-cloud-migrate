@@ -42,16 +42,33 @@ This document outlines the required functionalities to be implemented in the **O
   - Parse Markdown files in the selected Obsidian vault to identify links to media files.
   - Detect links of the following formats and replace them with public S3 or CloudFront URLs.
 
-```
-    pattern = rf"""
-        !\[\[({filename})(\|[^\]]+)?\]\] |   # Embedded Wikilink: ![[filename.extension]] or ![[filename.extension|alias]]
-        \[\[({filename})(#[^\]]*)?\]\] |     # Non-embedded Wikilink: [[filename.extension]] or [[filename.extension#^blockref]]
-        !\[\[[^\]]*\/({filename})\]\] |      # Wikilink with relative paths: ![[subfolder/filename.extension]]
-        !\[\[({filename})\]\] |              # Embedded Wikilink without additional metadata or alias: ![[filename.extension]]
-        !\[([^\]]*)\]\(({filename})\) |      # Markdown Image Link: ![alt text](filename.extension)
-        \[([^\]]*)\]\(({filename})\)         # Non-Embedded Markdown Link: [alt text](filename.extension)
-    """
-```
+#### **Supported Link Formats:**
+
+1. Obsidian Wikilinks:
+
+   - Basic: ![[filename.extension]]
+   - With alias: ![[filename.extension|alias]]
+   - With block reference: ![[filename.extension#^blockref]]
+   - With path: ![[subfolder/filename.extension]]
+   - With relative path: ![[../relative/path/filename.extension]]
+   - Non-embedded: [[filename.extension]]
+   - Non-embedded with block ref: [[filename.extension#^blockref]]
+   - Non-embedded with alias: [[filename.extension|alias]]
+
+2. Markdown Links:
+   - Basic: ![alt](filename.extension)
+   - With path: ![alt](subfolder/filename.extension)
+   - With relative path: ![alt](../relative/path/filename.extension)
+   - Non-embedded: [alt](filename.extension)
+   - With block reference: ![alt](filename.extension#^blockref)
+
+- **Link Detection Features**:
+
+  - Support for block references (#^blockref) in both Wikilinks and Markdown links
+  - Handle relative paths (../ or ./) in both link formats
+  - Support for aliases in Wikilinks
+  - Preserve original link metadata (block refs, aliases) during replacement
+  - Duplicate link detection prevention
 
 - **Backup Functionality**:
   - Before replacing links, create a backup of the original Markdown files.
@@ -80,8 +97,14 @@ This document outlines the required functionalities to be implemented in the **O
 
 ### 7. Logging
 
-- **Log File Generation**: Create a log file for every session to store detailed information regarding the operations performed.
-- **User Access to Logs**: Provide access to view log files from the UI.
+- **Log File Generation**:
+  - Create a log file for every session to store detailed information regarding the operations performed
+  - Use a singleton Logger class for consistent logging across components
+  - Include debug, info, warning, and error log levels
+  - Log detailed information about link matches including file positions and full match text
+- **User Access to Logs**:
+  - Provide access to view log files from the UI
+  - Display real-time log updates in the UI status area
 
 ### 8. Testing and Debugging Tools
 

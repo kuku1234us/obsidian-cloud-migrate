@@ -24,7 +24,8 @@ ObsidianCloudMigrate/
 │   ├── __init__.py
 │   ├── main_window.py
 │   ├── settings_dialog.py
-│   └── file_list_view.py
+│   ├── file_list_view.py
+│   └── work_progress.py
 │
 ├── core/
 │   ├── __init__.py
@@ -38,7 +39,8 @@ ObsidianCloudMigrate/
 │
 ├── managers/
 │   ├── __init__.py
-│   └── config_manager.py
+│   ├── config_manager.py
+│   └── link_manager.py
 │
 ├── types/
 │   ├── __init__.py
@@ -47,16 +49,18 @@ ObsidianCloudMigrate/
 └── utils/
     ├── __init__.py
     ├── error_handler.py
-    └── logger.py
+    ├── logger.py
+    └── singleton.py
 ```
 
 ## Root Directory
 
 - **.env**: Contains environment variables, including AWS credentials and region settings.
-- **.gitignore**: Specifies intentionally untracked files to ignore.
+- **.gitignore**: Specifies intentionally untracked files to ignore, including test-vault/ for development testing.
 - **README.md**: Provides an overview of the project, setup instructions, and other essential information.
 - **config.yaml**: Configuration file for various project settings.
 - **poetry.lock** & **pyproject.toml**: Manage project dependencies and configurations.
+- **main.py**: Main execution script for the project.
 
 ## Subdirectories
 
@@ -67,14 +71,14 @@ ObsidianCloudMigrate/
 
 ### components
 
-- **main_window.py**: Represents the main window of the application.
+- **main_window.py**: Main application window with dark Fusion theme and comprehensive logging integration.
 - **settings_dialog.py**: A dialog for configuring settings like AWS credentials, bucket name, and app behavior.
-- **file_list_view.py**: Displays the list of media files available for upload.
-- Purpose: Contains UI components for the project.
+- **file_list_view.py**: Displays and manages the list of media files with logging for file operations.
+- **work_progress.py**: Handles progress tracking and status updates with detailed logging.
+- Purpose: Contains UI components with integrated logging and status updates.
 
 ### core
 
-- **main.py**: Main execution script for the project.
 - **uploader.py**: Handles the uploading of files to the AWS S3 bucket.
 - Purpose: Core logic and main functionalities of the project.
 
@@ -88,7 +92,12 @@ ObsidianCloudMigrate/
 ### managers
 
 - **config_manager.py**: Manages configuration settings.
-- Purpose: Handles management tasks, especially related to configurations.
+- **link_manager.py**: Handles media link detection and replacement with support for:
+  - Multiple link formats (Wikilinks, Markdown)
+  - Block references and aliases
+  - Relative paths
+  - Duplicate detection prevention
+- Purpose: Handles management tasks for configuration and link processing.
 
 ### types
 
@@ -98,7 +107,8 @@ ObsidianCloudMigrate/
 ### utils
 
 - **error_handler.py**: Handles error logging and management.
-- **logger.py**: Provides logging functionalities.
-- Purpose: Utility functions and helpers for the project.
+- **logger.py**: Singleton Logger implementation with comprehensive logging levels.
+- **singleton.py**: Base singleton metaclass implementation.
+- Purpose: Provides utility functions and logging infrastructure.
 
 This structure helps in organizing the project efficiently, making it easier to maintain and scale.
