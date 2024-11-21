@@ -112,8 +112,8 @@ class MainWindow(QMainWindow):
             message = f"Starting to process {item['type']}: {item['path']}"
             self.logger.info(message)
             self.log_viewer.append(message)
-        elif status == "complete":
-            message = f"Completed processing {item['type']}: {item['path']}"
+        elif status in ["compression_complete", "upload_complete", "link_complete"]:
+            message = f"Completed {status.replace('_complete', '')} for {item['type']}: {item['path']}"
             self.logger.info(message)
             self.log_viewer.append(message)
             self.work_progress.update_progress(item, status)
@@ -135,3 +135,9 @@ class MainWindow(QMainWindow):
     def open_settings_dialog(self):
         # TODO: Implement settings dialog
         pass
+
+    def closeEvent(self, event):
+        """Handle application close event"""
+        # Clean up any running tasks
+        self.task_manager.cleanup()
+        event.accept()

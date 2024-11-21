@@ -27,10 +27,6 @@ ObsidianCloudMigrate/
 │   ├── file_list_view.py
 │   └── work_progress.py
 │
-├── core/
-│   ├── __init__.py
-│   └── uploader.py
-│
 ├── docs/
 │   ├── AWS Upload Guide.md
 │   ├── ProjectRequirements.md
@@ -41,6 +37,7 @@ ObsidianCloudMigrate/
 │   ├── __init__.py
 │   ├── config_manager.py
 │   └── link_manager.py
+│   └── upload_manager.py
 │
 ├── types/
 │   ├── __init__.py
@@ -77,11 +74,6 @@ ObsidianCloudMigrate/
 - **work_progress.py**: Handles progress tracking and status updates with detailed logging.
 - Purpose: Contains UI components with integrated logging and status updates.
 
-### core
-
-- **uploader.py**: Handles the uploading of files to the AWS S3 bucket.
-- Purpose: Core logic and main functionalities of the project.
-
 ### docs
 
 - **AWS Upload Guide.md**: Documentation for uploading to AWS.
@@ -92,6 +84,7 @@ ObsidianCloudMigrate/
 ### managers
 
 - **config_manager.py**: Manages configuration settings.
+- **upload_manager.py**: Handles the uploading of files to the AWS S3 bucket.
 - **link_manager.py**: Handles media link detection and replacement with support for:
   - Multiple link formats (Wikilinks, Markdown)
   - Block references and aliases

@@ -4,21 +4,13 @@ The following is a list of classes and components that should be implemented to 
 
 ## 1. Core Classes
 
-### 1.1 `MainApp`
+### 1.1 `Main Program`
 
 - **Location**: `./main.py`
 - **Description**: The main entry point for launching the PyQt6 interface of the application.
 - **Responsibilities**:
   - Initialize the application UI.
   - Manage high-level interactions between different components.
-
-### 1.2 `Uploader`
-
-- **Location**: `core/uploader.py`
-- **Description**: Handles the uploading of files to the AWS S3 bucket.
-- **Responsibilities**:
-  - Provide functions to upload files.
-  - Track upload progress and handle errors.
 
 ## 2. User Interface (UI) Components
 
@@ -45,6 +37,50 @@ The following is a list of classes and components that should be implemented to 
 - **Responsibilities**:
   - Allow users to view, filter, and select files to upload.
 
+### 2.4 `WorkProgress`
+
+- **Location**: `components/work_progress.py`
+- **Description**: Displays and manages progress tracking for the multi-stage file processing workflow.
+- **Responsibilities**:
+  - Track and display progress for compression, upload, and link replacement stages
+  - Calculate work units for different processing stages
+  - Provide accurate progress feedback to users
+
+#### Work Calculation Constants
+- `LINK_REPLACEMENT_WORK = 20000`: Fixed work units (20KB) for link replacement
+- `UPLOAD_WORK_MULTIPLIER = 5`: Upload work multiplier (5x filesize)
+- `VIDEO_COMPRESSION_MULTIPLIER = 10`: Video compression multiplier (10x filesize)
+- `IMAGE_COMPRESSION_MULTIPLIER = 1`: Image compression multiplier (1x filesize)
+
+#### Stage Status Strings
+- `compression_complete`: Indicates completion of file compression
+- `upload_complete`: Indicates completion of file upload
+- `link_complete`: Indicates completion of link replacement
+
+#### Work Calculation Examples
+For a 1MB image file:
+1. Compression: 1MB (1x)
+2. Upload: 5MB (5x)
+3. Link replacement: 20KB
+Total work: 6MB + 20KB
+
+For a 1MB video file:
+1. Compression: 10MB (10x)
+2. Upload: 5MB (5x)
+3. Link replacement: 20KB
+Total work: 15MB + 20KB
+
+#### Key Methods
+- `set_work(workload)`: Initialize progress tracking for a new workload
+- `update_progress(completed_item, status)`: Update progress based on stage completion
+- `calculate_stage_work(item, stage)`: Calculate work units for a specific stage
+- `calculate_total_work(item)`: Calculate total work units for all stages
+
+#### Integration Points
+- Receives progress updates from TaskManager via status signals
+- Used by MainWindow to display overall progress
+- Single source of truth for work calculations
+
 ## 3. Managers
 
 ### 3.1 `ConfigManager`
@@ -62,14 +98,6 @@ The following is a list of classes and components that should be implemented to 
 - **Responsibilities**:
   - Manage batch uploads.
   - Handle retries and error logging.
-
-### 3.3 `LogManager`
-
-- **Location**: `managers/log_manager.py`
-- **Description**: Manages logging for the application.
-- **Responsibilities**:
-  - Provide an interface for logging actions and events.
-  - Allow logs to be viewed in the UI.
 
 ## 4. Utility Classes
 

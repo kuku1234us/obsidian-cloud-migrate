@@ -14,6 +14,14 @@ class FileManager:
     def __init__(self):
         self.config_manager = ConfigManager()
         self.logger = Logger()
+        self.vault_path = None
+        self.image_extensions = [".jpeg", ".jpg", ".png", ".gif", ".bmp", ".tiff", ".tif", ".webp", ".heif", ".heic", ".svg"]
+        self.video_extensions = [".mp4", ".mov", ".avi", ".mkv", ".flv", ".wmv", ".m4v", ".webm", ".mpeg", ".3gp", ".ogv"]
+
+    def set_vault_path(self, path):
+        """Set the vault path"""
+        self.vault_path = path
+        self.logger.info(f"Set vault path to: {path}")
 
     def generate_processed_filename(self, original_filename, new_extension):
         """
@@ -37,9 +45,8 @@ class FileManager:
 
     def get_media_workload(self, directory):
         """Get list of all media files with their information"""
+        self.vault_path = directory  # Update vault path when getting workload
         workload = []
-        image_extensions = [".jpeg", ".jpg", ".png", ".gif", ".bmp", ".tiff", ".tif", ".webp", ".heif", ".heic", ".svg"]
-        video_extensions = [".mp4", ".mov", ".avi", ".mkv", ".flv", ".wmv", ".m4v", ".webm", ".mpeg", ".3gp", ".ogv"]
 
         for root, _, files in os.walk(directory):
             for file in files:
@@ -47,16 +54,18 @@ class FileManager:
                 file_path = os.path.join(root, file)
                 file_size = os.path.getsize(file_path)
 
-                if any(file_lower.endswith(ext) for ext in image_extensions):
+                if any(file_lower.endswith(ext) for ext in self.image_extensions):
                     workload.append({
                         'path': file_path,
+                        'original_path': file_path,
                         'filename': file,
                         'filesize': file_size,
                         'type': 'image'
                     })
-                elif any(file_lower.endswith(ext) for ext in video_extensions):
+                elif any(file_lower.endswith(ext) for ext in self.video_extensions):
                     workload.append({
                         'path': file_path,
+                        'original_path': file_path,
                         'filename': file,
                         'filesize': file_size,
                         'type': 'video'
@@ -70,6 +79,7 @@ class FileManager:
             if item['type'] != 'image':
                 continue
 
+            new_path = None
             try:
                 original_path = item['path']
                 self.logger.info(f"Starting to process image: {original_path}")
@@ -96,8 +106,9 @@ class FileManager:
 
                     img_resized = img_resized.convert('RGB')
                     img_resized.save(new_path, 'JPEG', quality=quality)
-                    # Store the compressed filename in the workload item
+                    # Store both the compressed filename and full path in the workload item
                     item['compressed_filename'] = new_filename
+                    item['processed_path'] = new_path
                     self.logger.info(f"Compressed and saved image: {new_path}")
                     
                     if progress_callback:
@@ -106,8 +117,17 @@ class FileManager:
             except Exception as e:
                 error_message = f"Failed to process image {original_path}: {e}"
                 self.logger.error(error_message)
+                item['error'] = error_message
+                item['status'] = 'failed'
+                # Clean up partially processed file if it exists
+                if new_path and os.path.exists(new_path):
+                    try:
+                        os.remove(new_path)
+                        self.logger.info(f"Cleaned up partial file: {new_path}")
+                    except Exception as cleanup_error:
+                        self.logger.error(f"Failed to clean up partial file {new_path}: {cleanup_error}")
                 if progress_callback:
-                    progress_callback(None, error_message=error_message)
+                    progress_callback(item, status="failed", error_message=error_message)
 
     def compress_videos_in_directory(self, workload, max_dimension=1080, crf=28, progress_callback=None):
         """Compress videos from workload array"""
@@ -115,6 +135,7 @@ class FileManager:
             if item['type'] != 'video':
                 continue
 
+            new_path = None
             try:
                 original_path = item['path']
                 self.logger.info(f"Starting to process video: {original_path}")
@@ -158,23 +179,48 @@ class FileManager:
                                     acodec='aac')
                 ffmpeg.run(stream, capture_stdout=True, capture_stderr=True)
 
-                # Store the compressed filename in the workload item
+                # Store both the compressed filename and full path in the workload item
                 item['compressed_filename'] = new_filename
+                item['processed_path'] = new_path
                 self.logger.info(f"Compressed and saved video: {new_path}")
                 if progress_callback:
                     progress_callback(item, status="complete")
 
+            except ffmpeg.Error as e:
+                error_message = f"FFmpeg error: {e.stderr.decode() if e.stderr else str(e)}"
+                self.logger.error(error_message)
+                item['error'] = error_message
+                item['status'] = 'failed'
+                # Clean up partially processed file if it exists
+                if new_path and os.path.exists(new_path):
+                    try:
+                        os.remove(new_path)
+                        self.logger.info(f"Cleaned up partial file: {new_path}")
+                    except Exception as cleanup_error:
+                        self.logger.error(f"Failed to clean up partial file {new_path}: {cleanup_error}")
+                if progress_callback:
+                    progress_callback(item, status="failed", error_message=error_message)
+
             except Exception as e:
                 error_message = f"Failed to process video {original_path}: {e}"
                 self.logger.error(error_message)
+                item['error'] = error_message
+                item['status'] = 'failed'
+                # Clean up partially processed file if it exists
+                if new_path and os.path.exists(new_path):
+                    try:
+                        os.remove(new_path)
+                        self.logger.info(f"Cleaned up partial file: {new_path}")
+                    except Exception as cleanup_error:
+                        self.logger.error(f"Failed to clean up partial file {new_path}: {cleanup_error}")
                 if progress_callback:
-                    progress_callback(None, error_message=error_message)
+                    progress_callback(item, status="failed", error_message=error_message)
 
     def create_backup(self, file_path):
         """Create a backup of a file before modifying it"""
         try:
             # Create backup directory if it doesn't exist
-            backup_dir = os.path.join(self.config_manager.get_vault_path(), '.backup')
+            backup_dir = os.path.join(self.vault_path, '.backup')
             if not os.path.exists(backup_dir):
                 os.makedirs(backup_dir)
             
@@ -217,4 +263,46 @@ class FileManager:
     
     def get_relative_path(self, file_path):
         """Get the path of a file relative to the vault root"""
-        return os.path.relpath(file_path, self.config_manager.get_vault_path())
+        return os.path.relpath(file_path, self.vault_path)
+
+    def get_markdown_files(self):
+        """Get all markdown files in the vault"""
+        markdown_files = []
+        for root, _, files in os.walk(self.vault_path):
+            for file in files:
+                if file.lower().endswith('.md'):
+                    markdown_files.append(os.path.join(root, file))
+        self.logger.info(f"Found {len(markdown_files)} markdown files in vault")
+        return markdown_files
+
+    def get_file_type(self, file_path):
+        """Get the type of file based on extension"""
+        file_lower = file_path.lower()
+        if any(file_lower.endswith(ext) for ext in self.image_extensions):
+            return 'image'
+        elif any(file_lower.endswith(ext) for ext in self.video_extensions):
+            return 'video'
+        elif file_lower.endswith('.md'):
+            return 'markdown'
+        return 'unknown'
+
+    def read_markdown_file(self, file_path):
+        """Read content from a markdown file"""
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                return True, f.read()
+        except Exception as e:
+            error_msg = f"Error reading file {file_path}: {str(e)}"
+            self.logger.error(error_msg)
+            return False, error_msg
+
+    def write_markdown_file(self, file_path, content):
+        """Write content to a markdown file"""
+        try:
+            with open(file_path, 'w', encoding='utf-8') as f:
+                f.write(content)
+            return True, "Successfully updated file"
+        except Exception as e:
+            error_msg = f"Error writing file {file_path}: {str(e)}"
+            self.logger.error(error_msg)
+            return False, error_msg
