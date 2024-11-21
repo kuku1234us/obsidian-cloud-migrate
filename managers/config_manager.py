@@ -25,10 +25,10 @@ class ConfigManager:
     def __init__(self):
         if self._initialized:
             return
-        self.logger = Logger()  # Retrieve the Logger instance
         self.config = {}
         self.confidential_config = {}  # Store confidential information separately
         self.app_mode = self.config.get("app_mode", "production")
+        self.logger = Logger()  # Retrieve the Logger instance
         self.logger.setup_logger(self)  # Pass self as config
         self.yaml = YAML()  # Use ruamel.yaml to load and dump YAML
         self._initialized = True

@@ -40,7 +40,19 @@ This document outlines the required functionalities to be implemented in the **O
 
 - **Local Link Parsing**:
   - Parse Markdown files in the selected Obsidian vault to identify links to media files.
-  - Detect links of the format `![[filename.extension]]` and replace them with public S3 or CloudFront URLs.
+  - Detect links of the following formats and replace them with public S3 or CloudFront URLs.
+
+```
+    pattern = rf"""
+        !\[\[({filename})(\|[^\]]+)?\]\] |   # Embedded Wikilink: ![[filename.extension]] or ![[filename.extension|alias]]
+        \[\[({filename})(#[^\]]*)?\]\] |     # Non-embedded Wikilink: [[filename.extension]] or [[filename.extension#^blockref]]
+        !\[\[[^\]]*\/({filename})\]\] |      # Wikilink with relative paths: ![[subfolder/filename.extension]]
+        !\[\[({filename})\]\] |              # Embedded Wikilink without additional metadata or alias: ![[filename.extension]]
+        !\[([^\]]*)\]\(({filename})\) |      # Markdown Image Link: ![alt text](filename.extension)
+        \[([^\]]*)\]\(({filename})\)         # Non-Embedded Markdown Link: [alt text](filename.extension)
+    """
+```
+
 - **Backup Functionality**:
   - Before replacing links, create a backup of the original Markdown files.
 - **Link Replacement Confirmation**:
