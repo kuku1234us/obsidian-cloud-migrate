@@ -49,6 +49,7 @@ coverage.xml
 *.cover
 .hypothesis/
 test-vault/
+app.log
 
 # Jupyter Notebook
 .ipynb_checkpoints
