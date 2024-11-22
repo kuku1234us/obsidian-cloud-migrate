@@ -9,10 +9,11 @@ from components.work_progress import WorkProgress
 from utils.logger import Logger
 
 class MainWindow(QMainWindow):
-    def __init__(self, config_manager, task_manager):
+    def __init__(self, config_manager, task_manager, file_manager):
         super().__init__()
         self.config_manager = config_manager
         self.task_manager = task_manager
+        self.file_manager = file_manager
         self.logger = Logger()  # Initialize singleton logger
 
         # Connect task manager signals
@@ -94,7 +95,7 @@ class MainWindow(QMainWindow):
             return
 
         # Get workload first
-        workload = self.task_manager.get_workload(current_directory)
+        workload = self.file_manager.get_media_workload(current_directory)
         if not workload:
             self.log_viewer.append("No media files found in the selected directory.")
             return

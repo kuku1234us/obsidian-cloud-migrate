@@ -4,11 +4,11 @@ import os
 import random
 import string
 from PIL import Image
-from utils.logger import Logger
 import ffmpeg
 import shutil
 from datetime import datetime
 from managers.config_manager import ConfigManager
+from utils.logger import Logger
 
 class FileManager:
     def __init__(self):
@@ -73,148 +73,125 @@ class FileManager:
 
         return workload
 
-    def compress_images_in_directory(self, workload, max_dimension=1280, quality=80, progress_callback=None):
-        """Compress images from workload array"""
-        for item in workload:
-            if item['type'] != 'image':
-                continue
+    def compress_single_file(self, item):
+        """Compress a single media file (image or video)"""
+        if item['type'] == 'image':
+            self.compress_single_image(item)
+        elif item['type'] == 'video':
+            self.compress_single_video(item)
+        else:
+            raise ValueError(f"Unsupported media type: {item['type']}")
 
-            new_path = None
-            try:
-                original_path = item['path']
-                self.logger.info(f"Starting to process image: {original_path}")
-                if progress_callback:
-                    progress_callback(item, status="start")
+    def compress_single_image(self, item, max_dimension=1280, quality=80):
+        """Compress a single image file"""
+        original_path = item['path']
+        self.logger.info(f"Starting to process image: {original_path}")
 
-                new_filename = self.generate_processed_filename(item['filename'], 'jpg')
-                new_path = os.path.join(os.path.dirname(original_path), new_filename)
+        new_filename = self.generate_processed_filename(item['filename'], 'jpg')
+        new_path = os.path.join(os.path.dirname(original_path), new_filename)
 
-                with Image.open(original_path) as img:
-                    # Check if resizing is needed
-                    width, height = img.size
-                    if width > max_dimension or height > max_dimension:
-                        aspect_ratio = width / height
-                        if width > height:
-                            new_width = max_dimension
-                            new_height = int(new_width / aspect_ratio)
-                        else:
-                            new_height = max_dimension
-                            new_width = int(new_height * aspect_ratio)
-                        img_resized = img.resize((new_width, new_height), Image.Resampling.LANCZOS)
-                    else:
-                        img_resized = img
-
-                    img_resized = img_resized.convert('RGB')
-                    img_resized.save(new_path, 'JPEG', quality=quality)
-                    # Store both the compressed filename and full path in the workload item
-                    item['compressed_filename'] = new_filename
-                    item['processed_path'] = new_path
-                    self.logger.info(f"Compressed and saved image: {new_path}")
-                    
-                    if progress_callback:
-                        progress_callback(item, status="complete")
-
-            except Exception as e:
-                error_message = f"Failed to process image {original_path}: {e}"
-                self.logger.error(error_message)
-                item['error'] = error_message
-                item['status'] = 'failed'
-                # Clean up partially processed file if it exists
-                if new_path and os.path.exists(new_path):
-                    try:
-                        os.remove(new_path)
-                        self.logger.info(f"Cleaned up partial file: {new_path}")
-                    except Exception as cleanup_error:
-                        self.logger.error(f"Failed to clean up partial file {new_path}: {cleanup_error}")
-                if progress_callback:
-                    progress_callback(item, status="failed", error_message=error_message)
-
-    def compress_videos_in_directory(self, workload, max_dimension=1080, crf=28, progress_callback=None):
-        """Compress videos from workload array"""
-        for item in workload:
-            if item['type'] != 'video':
-                continue
-
-            new_path = None
-            try:
-                original_path = item['path']
-                self.logger.info(f"Starting to process video: {original_path}")
-                if progress_callback:
-                    progress_callback(item, status="start")
-
-                new_filename = self.generate_processed_filename(item['filename'], 'mp4')
-                new_path = os.path.join(os.path.dirname(original_path), new_filename)
-
-                # Get video dimensions
-                probe = ffmpeg.probe(original_path)
-                video_stream = next((stream for stream in probe['streams'] if stream['codec_type'] == 'video'), None)
-                if video_stream is None:
-                    raise ValueError("No video stream found")
-
-                width = int(video_stream['width'])
-                height = int(video_stream['height'])
-
-                # Calculate new dimensions
+        try:
+            with Image.open(original_path) as img:
+                # Check if resizing is needed
+                width, height = img.size
                 if width > max_dimension or height > max_dimension:
+                    aspect_ratio = width / height
                     if width > height:
                         new_width = max_dimension
-                        new_height = int(height * (max_dimension / width))
+                        new_height = int(new_width / aspect_ratio)
                     else:
                         new_height = max_dimension
-                        new_width = int(width * (max_dimension / height))
-
-                    # Ensure dimensions are even
-                    new_width = new_width + (new_width % 2)
-                    new_height = new_height + (new_height % 2)
+                        new_width = int(new_height * aspect_ratio)
+                    img_resized = img.resize((new_width, new_height), Image.Resampling.LANCZOS)
                 else:
-                    new_width = width + (width % 2)
-                    new_height = height + (height % 2)
+                    img_resized = img
 
-                # Compress video
-                stream = ffmpeg.input(original_path)
-                stream = ffmpeg.output(stream, new_path,
-                                    vf=f'scale={new_width}:{new_height}',
-                                    vcodec='libx264',
-                                    crf=str(crf),
-                                    acodec='aac')
-                ffmpeg.run(stream, capture_stdout=True, capture_stderr=True)
-
-                # Store both the compressed filename and full path in the workload item
+                img_resized = img_resized.convert('RGB')
+                img_resized.save(new_path, 'JPEG', quality=quality)
+                self.logger.info(f"Compressed and saved image: {new_path}")
+                # Update item with compressed file info
                 item['compressed_filename'] = new_filename
                 item['processed_path'] = new_path
-                self.logger.info(f"Compressed and saved video: {new_path}")
-                if progress_callback:
-                    progress_callback(item, status="complete")
+        except Exception as e:
+            # Clean up partially processed file if it exists
+            if new_path and os.path.exists(new_path):
+                try:
+                    os.remove(new_path)
+                    self.logger.info(f"Cleaned up partial file: {new_path}")
+                except Exception as cleanup_error:
+                    self.logger.error(f"Failed to clean up partial file {new_path}: {cleanup_error}")
+            raise e
 
-            except ffmpeg.Error as e:
-                error_message = f"FFmpeg error: {e.stderr.decode() if e.stderr else str(e)}"
-                self.logger.error(error_message)
-                item['error'] = error_message
-                item['status'] = 'failed'
-                # Clean up partially processed file if it exists
-                if new_path and os.path.exists(new_path):
-                    try:
-                        os.remove(new_path)
-                        self.logger.info(f"Cleaned up partial file: {new_path}")
-                    except Exception as cleanup_error:
-                        self.logger.error(f"Failed to clean up partial file {new_path}: {cleanup_error}")
-                if progress_callback:
-                    progress_callback(item, status="failed", error_message=error_message)
+    def compress_single_video(self, item, max_dimension=1080, crf=28):
+        """Compress a single video file"""
+        original_path = item['path']
+        self.logger.info(f"Starting to process video: {original_path}")
 
-            except Exception as e:
-                error_message = f"Failed to process video {original_path}: {e}"
-                self.logger.error(error_message)
-                item['error'] = error_message
-                item['status'] = 'failed'
-                # Clean up partially processed file if it exists
-                if new_path and os.path.exists(new_path):
-                    try:
-                        os.remove(new_path)
-                        self.logger.info(f"Cleaned up partial file: {new_path}")
-                    except Exception as cleanup_error:
-                        self.logger.error(f"Failed to clean up partial file {new_path}: {cleanup_error}")
-                if progress_callback:
-                    progress_callback(item, status="failed", error_message=error_message)
+        new_filename = self.generate_processed_filename(item['filename'], 'mp4')
+        new_path = os.path.join(os.path.dirname(original_path), new_filename)
+
+        try:
+            # Get video dimensions
+            probe = ffmpeg.probe(original_path)
+            video_stream = next((stream for stream in probe['streams'] if stream['codec_type'] == 'video'), None)
+            if video_stream is None:
+                raise ValueError("No video stream found")
+
+            width = int(video_stream['width'])
+            height = int(video_stream['height'])
+
+            # Calculate new dimensions
+            if width > max_dimension or height > max_dimension:
+                if width > height:
+                    new_width = max_dimension
+                    new_height = int(height * (max_dimension / width))
+                else:
+                    new_height = max_dimension
+                    new_width = int(width * (max_dimension / height))
+
+                # Ensure dimensions are even
+                new_width = new_width + (new_width % 2)
+                new_height = new_height + (new_height % 2)
+            else:
+                new_width = width + (width % 2)
+                new_height = height + (height % 2)
+
+            # Compress video
+            stream = ffmpeg.input(original_path)
+            stream = ffmpeg.output(stream, new_path,
+                                   vf=f'scale={new_width}:{new_height}',
+                                   vcodec='libx264',
+                                   crf=str(crf),
+                                   acodec='aac',
+                                   preset='fast',
+                                   threads=0)  # Use all available CPU cores
+            ffmpeg.run(stream, capture_stdout=True, capture_stderr=True)
+            self.logger.info(f"Compressed and saved video: {new_path}")
+            # Update item with compressed file info
+            item['compressed_filename'] = new_filename
+            item['processed_path'] = new_path
+
+        except ffmpeg.Error as e:
+            error_message = f"FFmpeg error: {e.stderr.decode() if e.stderr else str(e)}"
+            # Clean up partially processed file if it exists
+            if new_path and os.path.exists(new_path):
+                try:
+                    os.remove(new_path)
+                    self.logger.info(f"Cleaned up partial file: {new_path}")
+                except Exception as cleanup_error:
+                    self.logger.error(f"Failed to clean up partial file {new_path}: {cleanup_error}")
+            raise Exception(error_message)
+        except Exception as e:
+            # Clean up partially processed file if it exists
+            if new_path and os.path.exists(new_path):
+                try:
+                    os.remove(new_path)
+                    self.logger.info(f"Cleaned up partial file: {new_path}")
+                except Exception as cleanup_error:
+                    self.logger.error(f"Failed to clean up partial file {new_path}: {cleanup_error}")
+            raise e
+
+    # ... (Rest of the methods remain unchanged) ...
 
     def create_backup(self, file_path):
         """Create a backup of a file before modifying it"""
@@ -223,23 +200,23 @@ class FileManager:
             backup_dir = os.path.join(self.vault_path, '.backup')
             if not os.path.exists(backup_dir):
                 os.makedirs(backup_dir)
-            
+
             # Generate backup filename with timestamp
             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
             filename = os.path.basename(file_path)
             backup_name = f"{filename}_{timestamp}.bak"
             backup_path = os.path.join(backup_dir, backup_name)
-            
+
             # Create backup
             shutil.copy2(file_path, backup_path)
             self.logger.info(f"Created backup of {filename} at {backup_path}")
             return True, backup_path
-            
+
         except Exception as e:
             error_msg = f"Error creating backup of {file_path}: {str(e)}"
             self.logger.error(error_msg)
             return False, error_msg
-    
+
     def save_file_content(self, file_path, content, create_backup=True):
         """Save content to a file with optional backup"""
         try:
@@ -248,19 +225,19 @@ class FileManager:
                 backup_success, backup_result = self.create_backup(file_path)
                 if not backup_success:
                     return False, f"Failed to create backup: {backup_result}"
-            
+
             # Save the new content
             with open(file_path, 'w', encoding='utf-8') as f:
                 f.write(content)
-            
+
             self.logger.info(f"Successfully saved changes to {file_path}")
             return True, file_path
-            
+
         except Exception as e:
             error_msg = f"Error saving changes to {file_path}: {str(e)}"
             self.logger.error(error_msg)
             return False, error_msg
-    
+
     def get_relative_path(self, file_path):
         """Get the path of a file relative to the vault root"""
         return os.path.relpath(file_path, self.vault_path)

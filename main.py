@@ -7,6 +7,7 @@ from components.main_window import MainWindow
 from managers.config_manager import ConfigManager
 from components.theme_manager import ThemeManager
 from managers.task_manager import TaskManager
+from managers.file_manager import FileManager
 
 def setup_logging():
     logging.basicConfig(
@@ -28,10 +29,11 @@ def main():
     theme_manager.apply_theme()
     
     # Initialize task manager
-    task_manager = TaskManager()
+    file_manager = FileManager()
+    task_manager = TaskManager(file_manager)
     
     # Create and show main window
-    main_window = MainWindow(config_manager, task_manager)
+    main_window = MainWindow(config_manager, task_manager, file_manager)
     theme_manager.enable_dark_title_bar(main_window)
     main_window.show()
     
