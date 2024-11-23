@@ -1,6 +1,6 @@
-# Proposed Classes and Components for ObsidianCloudMigrate
+# Proposed Classes and Components for VaultManager
 
-The following is a list of classes and components that should be implemented to build a complete and functional **ObsidianCloudMigrate** application. These components are designed to modularize the application, improve maintainability, and provide clear separation of concerns.
+The following is a list of classes and components that should be implemented to build a complete and functional **VaultManager** application. These components are designed to modularize the application, improve maintainability, and provide clear separation of concerns.
 
 ## 1. Core Classes
 
@@ -160,4 +160,4 @@ Total work: 15MB + 20KB
 
 ## Summary
 
-These classes and components provide a modular and extensible foundation for the **ObsidianCloudMigrate** application. The **Core** components focus on the primary functionality (uploading and link replacement), while the **Managers** provide a layer of control and coordination. The **UI Components** offer a user-friendly interface, and the **Utilities** handle logging, configuration, and error management. The **Types and Data Models** represent the application's data, and additional components like `LinkReplacer` and `BackupManager` add robustness to the application. This approach ensures maintainability and clear separation of responsibilities, making future extensions easier.
+These classes and components provide a modular and extensible foundation for the **VaultManager** application. The **Core** components focus on the primary functionality (uploading and link replacement), while the **Managers** provide a layer of control and coordination. The **UI Components** offer a user-friendly interface, and the **Utilities** handle logging, configuration, and error management. The **Types and Data Models** represent the application's data, and additional components like `LinkReplacer` and `BackupManager` add robustness to the application. This approach ensures maintainability and clear separation of responsibilities, making future extensions easier.

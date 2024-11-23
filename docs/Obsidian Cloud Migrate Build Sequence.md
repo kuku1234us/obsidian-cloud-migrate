@@ -1,6 +1,6 @@
 ## Step-by-Step Build Sequence
 
-To ensure an efficient and logical development flow, here is a proposed step-by-step sequence for building the **ObsidianCloudMigrate** classes and components. This approach allows for incremental testing and functionality integration:
+To ensure an efficient and logical development flow, here is a proposed step-by-step sequence for building the **VaultManager** classes and components. This approach allows for incremental testing and functionality integration:
 
 ### **Step 1: Basic UI Setup**
 1. **Create `MainApp` (main.py)**:
@@ -67,4 +67,4 @@ To ensure an efficient and logical development flow, here is a proposed step-by-
    - Improve UI responsiveness.
    - Handle edge cases, such as missing AWS credentials, failed uploads, or incorrect directory paths.
 
-By following this incremental approach, you can build the **ObsidianCloudMigrate** application step by step, ensuring that each component is tested and fully functional before moving on to the next. This makes it easier to identify and fix issues as they arise, leading to a more stable and maintainable codebase. 
+By following this incremental approach, you can build the **VaultManager** application step by step, ensuring that each component is tested and fully functional before moving on to the next. This makes it easier to identify and fix issues as they arise, leading to a more stable and maintainable codebase.

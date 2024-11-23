@@ -39,7 +39,7 @@ def upload_file_to_s3(file_name, bucket_name, object_name=None):
 
 if __name__ == "__main__":
     # Specify the file to upload and the S3 bucket name
-    file_to_upload = "D:\\projects\\obsidiancloudmigrate\\assets\\appicon.png"
+    file_to_upload = "D:\\projects\\vaultmanager\\assets\\appicon.png"
     bucket_name = "gbacbucket"  # Replace with your bucket name
 
     # Upload the file to S3

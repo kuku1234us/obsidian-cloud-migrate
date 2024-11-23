@@ -1,14 +1,13 @@
 # ProjectRequirements for Vault-Manager
 
-This document outlines the required functionalities to be implemented in the **ObsidianCloudMigrate** project, which aims to provide an efficient solution for managing media files within an Obsidian vault. The project includes an interface built with **PyQt6** for an intuitive user experience.
+This document outlines the required functionalities to be implemented in the **VaultManager** project, which aims to provide an efficient solution for managing media files within an Obsidian vault. The project includes an interface built with **PyQt6** for an intuitive user experience.
 
 ## Functional Requirements
 
 ### 1. User Interface (UI) with PyQt6
 
 - **Main Window**: Design a main application window using PyQt6.
-  - **Title**: Set the title to "ObsidianCloudMigrate Tool".
-  - **Theme**: Use a dark Fusion theme for the interface.
+  - **Title**: Set the title to "VaultManager Tool".
 - **Menu Bar**: Include a menu bar with the following menus:
   - **File**: Options to configure settings, save current configuration, and exit the application.
   - **Help**: Provide information about the tool and an option for viewing user documentation.

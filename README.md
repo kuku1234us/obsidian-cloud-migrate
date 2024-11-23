@@ -1,6 +1,6 @@
-# ObsidianCloudMigrate
+# VaultManager
 
-ObsidianCloudMigrate is a Python tool designed to help you manage media files within your Obsidian vault by automating the process of uploading these files to cloud storage, freeing up local space, and replacing local links with external cloud URLs. The current version of the tool supports integration with AWS S3 + CloudFront to minimize storage footprint and ensure efficient content delivery.
+VaultManager is a Python tool designed to help you manage media files within your Obsidian vault by automating the process of uploading these files to cloud storage, freeing up local space, and replacing local links with external cloud URLs. The current version of the tool supports integration with AWS S3 + CloudFront to minimize storage footprint and ensure efficient content delivery.
 
 ## Features
 
@@ -21,8 +21,8 @@ ObsidianCloudMigrate is a Python tool designed to help you manage media files wi
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/obsidiancloudmigrate.git
-cd obsidiancloudmigrate
+git clone https://github.com/kuku1234us/vaultmanager.git
+cd vaultmanager
 ```
 
 ### Step 2: Install Dependencies
@@ -63,7 +63,7 @@ cloudfront_distribution_id: your_distribution_id # Optional, if you use CloudFro
 Run the main script to start uploading your media files from the Obsidian vault:
 
 ```bash
-python obsidiancloudmigrate.py
+python vaultmanager.py
 ```
 
 This script will:

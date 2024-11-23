@@ -23,7 +23,7 @@ class MainWindow(QMainWindow):
         self.task_manager.all_tasks_completed.connect(self.on_all_tasks_completed)
 
         # Set main window properties
-        self.setWindowTitle("ObsidianCloudMigrate")
+        self.setWindowTitle("Vault Manager")
         self.setGeometry(100, 100, 1000, 600)
         self.setWindowIcon(QIcon("./assets/appicon.png"))
 

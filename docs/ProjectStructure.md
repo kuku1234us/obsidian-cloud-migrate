@@ -1,9 +1,9 @@
 # Project Structure
 
-This document provides a detailed description of the folder structure and purpose for each folder in the `ObsidianCloudMigrate` project.
+This document provides a detailed description of the folder structure and purpose for each folder in the `VaultManager` project.
 
 ```ProjectTree
-ObsidianCloudMigrate/
+VaultManager/
 │
 ├── .env
 ├── .gitignore
