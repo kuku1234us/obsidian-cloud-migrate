@@ -1,4 +1,4 @@
-# ProjectRequirements for Obsidian-Cloud-Migrate
+# ProjectRequirements for Vault-Manager
 
 This document outlines the required functionalities to be implemented in the **ObsidianCloudMigrate** project, which aims to provide an efficient solution for managing media files within an Obsidian vault. The project includes an interface built with **PyQt6** for an intuitive user experience.
 
