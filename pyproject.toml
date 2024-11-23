@@ -1,20 +1,23 @@
 [tool.poetry]
-name = "obsidiancloudmigrate"
+name = "Vault Manager"
 version = "0.1.0"
-description = "Obsidian Cloud Migration Tool"
+description = "Obsidian Management Tool"
 authors = ["kothreat <kuku1234us@yahoo.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.12,<3.13"
 boto3 = "^1.35.65"
 python-dotenv = "^1.0.1"
-pyqt6 = "^6.7.1"
 ruamel-yaml = "^0.18.6"
 pillow = "^11.0.0"
 ffmpeg-python = "^0.2.0"
-
+pyinstaller = "^6.3.0"
+pyqt6 = "^6.7.1"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+vaultmanager = "main:main"

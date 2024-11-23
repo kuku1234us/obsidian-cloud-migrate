@@ -23,6 +23,7 @@ VaultManager/
 ├── components/
 │   ├── __init__.py
 │   ├── main_window.py
+│   ├── system_tray.py
 │   ├── settings_dialog.py
 │   ├── file_list_view.py
 │   └── work_progress.py
@@ -68,11 +69,22 @@ VaultManager/
 
 ### components
 
-- **main_window.py**: Main application window with dark Fusion theme and comprehensive logging integration.
+- **main_window.py**: Main application window implementing the core functionality:
+  - Dark Fusion theme
+  - Settings dialog management
+  - System tray integration
+  - Window state management (show/hide/quit)
+  - Comprehensive logging integration
+  - Clean process lifecycle management
+- **system_tray.py**: System tray implementation with:
+  - Proper lifecycle management using QObject parent
+  - Context menu with show/hide, settings, and quit actions
+  - Left-click activation handling
+  - Clean resource cleanup on exit
 - **settings_dialog.py**: A dialog for configuring settings like AWS credentials, bucket name, and app behavior.
 - **file_list_view.py**: Displays and manages the list of media files with logging for file operations.
 - **work_progress.py**: Handles progress tracking and status updates with detailed logging.
-- Purpose: Contains UI components with integrated logging and status updates.
+- Purpose: Contains UI components with integrated logging, status updates, and proper resource management.
 
 ### docs
 

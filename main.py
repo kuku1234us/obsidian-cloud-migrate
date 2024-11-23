@@ -3,6 +3,7 @@
 import sys
 import logging
 from PyQt6.QtWidgets import QApplication
+from PyQt6.QtCore import Qt
 from components.main_window import MainWindow
 from managers.config_manager import ConfigManager
 from components.theme_manager import ThemeManager
@@ -19,6 +20,9 @@ def setup_logging():
 def main():
     # Initialize application
     app = QApplication(sys.argv)
+    
+    # Prevent application from quitting when last window is closed
+    app.setQuitOnLastWindowClosed(False)
     
     # Initialize managers
     config_manager = ConfigManager()

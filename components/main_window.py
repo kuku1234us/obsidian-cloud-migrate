@@ -1,17 +1,31 @@
 from PyQt6.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QPushButton, 
-    QLabel, QFileDialog, QTextEdit
+    QLabel, QFileDialog, QTextEdit, QApplication
 )
 from PyQt6.QtGui import QIcon
-from PyQt6.QtCore import Qt, QThread
+from PyQt6.QtCore import Qt
 from components.file_list_view import FileListView
 from components.work_progress import WorkProgress
 from components.settings_dialog import SettingsDialog
+from components.system_tray import SystemTray
 from utils.logger import Logger
+import os
+import sys
+
+def get_asset_path(relative_path):
+    """Get absolute path to resource, works for dev and for PyInstaller"""
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 class MainWindow(QMainWindow):
     def __init__(self, config_manager, task_manager, file_manager):
         super().__init__()
+        self.setWindowTitle("Vault Manager")
         self.config_manager = config_manager
         self.task_manager = task_manager
         self.file_manager = file_manager
@@ -23,12 +37,18 @@ class MainWindow(QMainWindow):
         self.task_manager.all_tasks_completed.connect(self.on_all_tasks_completed)
 
         # Set main window properties
-        self.setWindowTitle("Vault Manager")
         self.setGeometry(100, 100, 1000, 600)
-        self.setWindowIcon(QIcon("./assets/appicon.png"))
+        icon_path = get_asset_path("assets/appicon.ico")
+        self.setWindowIcon(QIcon(icon_path))
 
         # Initialize UI components
         self.init_ui()
+        self.minimize_to_tray = True  # New flag for tray behavior
+        self.settings_dialog = None  # Keep track of settings dialog
+
+        # Initialize system tray
+        self.tray_icon = SystemTray(self)
+        self.tray_icon.show()
 
     def init_ui(self):
         # Main central widget
@@ -136,15 +156,43 @@ class MainWindow(QMainWindow):
 
     def open_settings_dialog(self):
         """Open the settings configuration dialog"""
-        settings_dialog = SettingsDialog(self)
-        if settings_dialog.exec():
-            # Reload any necessary configurations
+        self.show_settings()
+
+    def show_settings(self):
+        """Show settings dialog without showing main window"""
+        if not self.settings_dialog:
+            self.settings_dialog = SettingsDialog(self)  # Use self as parent for proper lifecycle management
+            self.settings_dialog.finished.connect(self.on_settings_dialog_closed)
+        self.settings_dialog.show()
+        self.settings_dialog.activateWindow()
+
+    def on_settings_dialog_closed(self, result):
+        """Handle settings dialog closure"""
+        if result:  # If OK was clicked
             self.config_manager.load_config()
             self.logger.info("Settings updated successfully")
+        self.settings_dialog = None
 
     def closeEvent(self, event):
-        """Handle application close event"""
-        # Stop all running worker threads
-        if self.task_manager:
-            self.task_manager.stop_all_workers()
-        event.accept()
+        """Handle window close event"""
+        if self.minimize_to_tray:
+            event.ignore()
+            self.hide()
+        else:
+            self.quit()
+
+    def quit(self):
+        """Quit the application"""
+        # Clean up any open dialogs
+        if self.settings_dialog:
+            self.settings_dialog.close()
+            self.settings_dialog = None
+
+        # Hide tray icon before quitting
+        if self.tray_icon:
+            self.tray_icon.hide()
+            self.tray_icon.setParent(None)  # Remove parent to prevent ghost process
+            self.tray_icon = None
+
+        # Quit the application
+        QApplication.instance().quit()

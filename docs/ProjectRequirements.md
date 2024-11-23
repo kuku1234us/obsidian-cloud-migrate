@@ -14,6 +14,16 @@ This document outlines the required functionalities to be implemented in the **V
 
 - **Main Window**: Design a main application window using PyQt6.
   - **Title**: Set the title to "VaultManager Tool".
+  - **Window Management**:
+    - Minimize to system tray functionality
+    - Window state persistence (position, size)
+    - Clean process management
+- **System Tray Integration**:
+  - System tray icon with context menu
+  - Left-click activation for window toggle
+  - Menu options for show/hide, settings, and quit
+  - Proper resource cleanup on exit
+  - Single instance enforcement
 - **Menu Bar**: Include a menu bar with the following menus:
   - **File**: Options to configure settings, save current configuration, and exit the application.
   - **Help**: Provide information about the tool and an option for viewing user documentation.
@@ -42,7 +52,26 @@ This document outlines the required functionalities to be implemented in the **V
       - Securely store sensitive credentials in `.env` file
       - Provide option to test AWS connectivity
 
-### 2. AWS S3 + CloudFront Integration
+### 2. Process and Resource Management
+
+- **Single Instance**:
+  - Ensure only one instance of the application runs at a time
+  - Handle subsequent launch attempts gracefully
+- **Background Operation**:
+  - Support running in background when minimized to system tray
+  - Maintain full functionality in background mode
+  - Proper cleanup of system tray resources
+- **Resource Management**:
+  - Clean up all resources on application exit
+  - Proper handling of window and dialog lifecycles
+  - Memory leak prevention
+  - Efficient process management
+- **State Management**:
+  - Persist window state and position
+  - Remember last used settings
+  - Handle system events (shutdown, sleep, etc.)
+
+### 3. AWS S3 + CloudFront Integration
 
 - **AWS Configuration**:
   - Allow the user to input AWS credentials manually or load from the `.env` file.
@@ -54,7 +83,7 @@ This document outlines the required functionalities to be implemented in the **V
   - Use CloudFront to generate URLs if the user has specified a CloudFront distribution.
   - Automatically update media file links in Markdown to reflect the CloudFront URLs.
 
-### 3. Link Replacement in Markdown Files
+### 4. Link Replacement in Markdown Files
 
 - **Local Link Parsing**:
   - Parse Markdown files in the selected Obsidian vault to identify links to media files.
@@ -93,12 +122,12 @@ This document outlines the required functionalities to be implemented in the **V
 - **Link Replacement Confirmation**:
   - Provide a preview of the changes, allowing the user to confirm before applying them.
 
-### 4. AWS SDK
+### 5. AWS SDK
 
 - **Boto3**:
   - Use the Boto3 library to interact with AWS services, specifically for uploading files to AWS S3.
 
-### 5. Error Handling and Notifications
+### 6. Error Handling and Notifications
 
 - **Connection Errors**: Display informative messages if there are any issues connecting to AWS.
 - **File Handling Errors**: Catch and log errors related to missing files or incorrect permissions.
@@ -106,14 +135,14 @@ This document outlines the required functionalities to be implemented in the **V
   - Provide notifications on completion of upload and link replacement.
   - Show warnings for files that could not be uploaded or replaced.
 
-### 6. Configuration Management
+### 7. Configuration Management
 
 - **Save Configuration**:
   - Allow users to save their current settings (vault path, AWS credentials, etc.) for later use.
 - **Load Configuration**:
   - Provide an option to load a previously saved configuration.
 
-### 7. Logging
+### 8. Logging
 
 - **Log File Generation**:
   - Create a log file for every session to store detailed information regarding the operations performed
@@ -124,7 +153,7 @@ This document outlines the required functionalities to be implemented in the **V
   - Provide access to view log files from the UI
   - Display real-time log updates in the UI status area
 
-### 8. Testing and Debugging Tools
+### 9. Testing and Debugging Tools
 
 - **Test Upload**: Provide a "Test Upload" button to verify if the connection to AWS S3 is working correctly.
 - **Verbose Mode**: Add an option to run the tool in verbose mode for more detailed output during debugging.

@@ -33,27 +33,50 @@ The following is a list of classes and components that should be implemented to 
 - **Description**: Represents the main window of the application.
 - **Responsibilities**:
   - Display the UI components for selecting files, viewing logs, and starting uploads.
-  - Provide user interaction elements such as buttons and input fields.
+  - Manage settings dialog lifecycle and state
+  - Handle window state management (show/hide/minimize)
+  - Integrate with system tray for background operation
+  - Ensure clean process management and resource cleanup
 - **Design**:
   - **Main Layout**: Use a `QVBoxLayout` to organize the main sections of the window vertically.
   - **File Selection Area**:
-    - **Directory Selector**: A `QPushButton` labeled "Select Vault Directory" at the top, allowing the user to select the Obsidian vault directory.
-    - **File List View**: Below the directory selector, a `QListView` that displays the media files found in the selected directory, allowing users to select files for upload.
+    - **Directory Selector**: A `QPushButton` labeled "Select Vault Directory" at the top.
+    - **File List View**: A `QListView` that displays media files found in the selected directory.
   - **Upload Control Area**:
-    - **Upload Button**: A `QPushButton` labeled "Upload to S3" placed below the file list. This button initiates the upload of selected files.
-    - **Progress Bar**: A `QProgressBar` under the upload button to indicate the progress of the upload process.
+    - **Upload Button**: A `QPushButton` labeled "Upload to S3".
+    - **Progress Bar**: A `QProgressBar` to indicate upload progress.
   - **Log Display Area**:
-    - **Log Viewer**: A `QTextEdit` widget at the bottom of the window to display logs and messages for user feedback. It will be set to read-only mode to prevent user edits.
-  - **Settings Button**: A `QPushButton` labeled "Settings" in the bottom-right corner, allowing users to open the settings dialog.
+    - **Log Viewer**: A read-only `QTextEdit` widget for displaying logs and messages.
+  - **Settings Button**: A `QPushButton` labeled "Settings" to open the settings dialog.
+  - **System Tray Integration**:
+    - Minimize to system tray functionality
+    - Show/hide window from tray icon
+    - Clean resource management for background operation
 
-### 2.2 `FileListView`
+### 2.2 `SystemTray`
+
+- **Location**: `components/system_tray.py`
+- **Description**: Manages the application's system tray presence and interaction.
+- **Responsibilities**:
+  - Provide system tray icon and context menu
+  - Handle left-click activation for window toggle
+  - Manage menu actions (show/hide, settings, quit)
+  - Ensure proper resource cleanup on application exit
+- **Design**:
+  - **Icon Management**: Load and display application icon in system tray
+  - **Context Menu**: Create and manage right-click menu with actions
+  - **Activation Handling**: Process left-click events for window toggle
+  - **Resource Management**: Proper parent-child relationships for clean lifecycle
+  - **Integration**: Tight integration with MainWindow for state management
+
+### 2.3 `FileListView`
 
 - **Location**: `components/file_list_view.py`
 - **Description**: A component that displays the list of media files available for upload.
 - **Responsibilities**:
   - Allow users to view, filter, and select files to upload.
 
-### 2.3 `SettingsDialog`
+### 2.4 `SettingsDialog`
 
 - **Location**: `components/settings_dialog.py`
 - **Description**: A dialog for configuring settings like AWS credentials, bucket name, and app behavior.
