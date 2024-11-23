@@ -192,51 +192,6 @@ class FileManager:
                     self.logger.error(f"Failed to clean up partial file {new_path}: {cleanup_error}")
             raise e
 
-    def create_backup(self, file_path):
-        """Create a backup of a file before modifying it"""
-        try:
-            # Create backup directory if it doesn't exist
-            backup_dir = os.path.join(self.vault_path, '.backup')
-            if not os.path.exists(backup_dir):
-                os.makedirs(backup_dir)
-
-            # Generate backup filename with timestamp
-            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-            filename = os.path.basename(file_path)
-            backup_name = f"{filename}_{timestamp}.bak"
-            backup_path = os.path.join(backup_dir, backup_name)
-
-            # Create backup
-            shutil.copy2(file_path, backup_path)
-            self.logger.info(f"Created backup of {filename} at {backup_path}")
-            return True, backup_path
-
-        except Exception as e:
-            error_msg = f"Error creating backup of {file_path}: {str(e)}"
-            self.logger.error(error_msg)
-            return False, error_msg
-
-    def save_file_content(self, file_path, content, create_backup=True):
-        """Save content to a file with optional backup"""
-        try:
-            # Create backup if requested
-            if create_backup:
-                backup_success, backup_result = self.create_backup(file_path)
-                if not backup_success:
-                    return False, f"Failed to create backup: {backup_result}"
-
-            # Save the new content
-            with open(file_path, 'w', encoding='utf-8') as f:
-                f.write(content)
-
-            self.logger.info(f"Successfully saved changes to {file_path}")
-            return True, file_path
-
-        except Exception as e:
-            error_msg = f"Error saving changes to {file_path}: {str(e)}"
-            self.logger.error(error_msg)
-            return False, error_msg
-
     def get_relative_path(self, file_path):
         """Get the path of a file relative to the vault root"""
         return os.path.relpath(file_path, self.vault_path)

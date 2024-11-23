@@ -1,3 +1,9 @@
+---
+parent: "[[Vault Manager]]"
+banner: https://cdn.midjourney.com/c3a9b74b-8f85-4fcb-bcf5-24d00f44463c/0_0_640_N.webp
+banner_y: 0.632
+---
+
 # ProjectRequirements for Vault-Manager
 
 This document outlines the required functionalities to be implemented in the **VaultManager** project, which aims to provide an efficient solution for managing media files within an Obsidian vault. The project includes an interface built with **PyQt6** for an intuitive user experience.
@@ -58,21 +64,21 @@ This document outlines the required functionalities to be implemented in the **V
 
 1. Obsidian Wikilinks:
 
-   - Basic: ![[filename.extension]]
-   - With alias: ![[filename.extension|alias]]
-   - With block reference: ![[filename.extension#^blockref]]
-   - With path: ![[subfolder/filename.extension]]
-   - With relative path: ![[../relative/path/filename.extension]]
-   - Non-embedded: [[filename.extension]]
-   - Non-embedded with block ref: [[filename.extension#^blockref]]
-   - Non-embedded with alias: [[filename.extension|alias]]
+   - Basic: `![[filename.extension]]`
+   - With alias: `![[filename.extension|alias]]`
+   - With block reference: `![[filename.extension#^blockref]]`
+   - With path: `![[subfolder/filename.extension]]`
+   - With relative path: `![[../relative/path/filename.extension]]`
+   - Non-embedded: `[[filename.extension]]`
+   - Non-embedded with block ref: `[[filename.extension#^blockref]]`
+   - Non-embedded with alias: `[[filename.extension|alias]]`
 
 2. Markdown Links:
-   - Basic: ![alt](filename.extension)
-   - With path: ![alt](subfolder/filename.extension)
-   - With relative path: ![alt](../relative/path/filename.extension)
-   - Non-embedded: [alt](filename.extension)
-   - With block reference: ![alt](filename.extension#^blockref)
+   - Basic: `![alt](filename.extension)`
+   - With path: `![alt](subfolder/filename.extension)`
+   - With relative path: `![alt](../relative/path/filename.extension)`
+   - Non-embedded: `[alt](filename.extension)`
+   - With block reference: `![alt](filename.extension#^blockref)`
 
 - **Link Detection Features**:
 
