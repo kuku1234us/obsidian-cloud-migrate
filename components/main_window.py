@@ -6,6 +6,7 @@ from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import Qt, QThread
 from components.file_list_view import FileListView
 from components.work_progress import WorkProgress
+from components.settings_dialog import SettingsDialog
 from utils.logger import Logger
 
 class MainWindow(QMainWindow):
@@ -134,11 +135,16 @@ class MainWindow(QMainWindow):
         self.upload_button.setEnabled(True)
 
     def open_settings_dialog(self):
-        # TODO: Implement settings dialog
-        pass
+        """Open the settings configuration dialog"""
+        settings_dialog = SettingsDialog(self)
+        if settings_dialog.exec():
+            # Reload any necessary configurations
+            self.config_manager.load_config()
+            self.logger.info("Settings updated successfully")
 
     def closeEvent(self, event):
         """Handle application close event"""
-        # Clean up any running tasks
-        self.task_manager.cleanup()
+        # Stop all running worker threads
+        if self.task_manager:
+            self.task_manager.stop_all_workers()
         event.accept()

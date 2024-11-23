@@ -164,6 +164,7 @@ class FileManager:
                                    crf=str(crf),
                                    acodec='aac',
                                    preset='fast',
+                                   movflags='+faststart',
                                    threads=0)  # Use all available CPU cores
             ffmpeg.run(stream, capture_stdout=True, capture_stderr=True)
             self.logger.info(f"Compressed and saved video: {new_path}")
@@ -190,8 +191,6 @@ class FileManager:
                 except Exception as cleanup_error:
                     self.logger.error(f"Failed to clean up partial file {new_path}: {cleanup_error}")
             raise e
-
-    # ... (Rest of the methods remain unchanged) ...
 
     def create_backup(self, file_path):
         """Create a backup of a file before modifying it"""

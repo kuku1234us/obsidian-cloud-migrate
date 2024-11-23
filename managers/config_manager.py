@@ -30,7 +30,14 @@ class ConfigManager:
         self.app_mode = self.config.get("app_mode", "production")
         self.logger = Logger()  # Retrieve the Logger instance
         self.logger.setup_logger(self)  # Pass self as config
-        self.yaml = YAML()  # Use ruamel.yaml to load and dump YAML
+        
+        # Initialize ruamel.yaml with proper settings
+        self.yaml = YAML()
+        self.yaml.preserve_quotes = True  # Preserve quote style
+        self.yaml.indent(mapping=2, sequence=4, offset=2)  # Maintain formatting
+        self.yaml.width = 4096  # Prevent line wrapping
+        self.yaml.preserve_comments = True  # Keep comments
+        
         self._initialized = True
 
     def load_config(self):
@@ -39,8 +46,12 @@ class ConfigManager:
 
         # Load YAML configuration
         config_path = os.getenv("CONFIG_PATH", "config.yaml")
-        with open(config_path, "r") as config_file:
-            self.config = self.yaml.load(config_file)
+        try:
+            with open(config_path, "r", encoding='utf-8') as config_file:
+                self.config = self.yaml.load(config_file) or {}
+        except FileNotFoundError:
+            self.logger.warning(f"Config file not found at {config_path}, using defaults")
+            self.config = {}
 
         # Add confidential information from environment variables
         self.confidential_config = {
@@ -65,7 +76,31 @@ class ConfigManager:
     def set_vault_directory(self, directory):
         # Update the vault directory in config and persist to config.yaml
         self.config["vault_directory"] = directory
-        config_path = os.getenv("CONFIG_PATH", "config.yaml")
-        with open(config_path, "w") as config_file:
-            self.yaml.dump(self.config, config_file)
+        self.save_config()
         self.logger.info(f"Vault directory updated to: {directory}")
+
+    def save_config(self):
+        """Save current configuration to config.yaml while preserving comments and structure."""
+        config_path = os.getenv("CONFIG_PATH", "config.yaml")
+        
+        # If file exists, load existing structure first
+        if os.path.exists(config_path):
+            with open(config_path, "r", encoding='utf-8') as config_file:
+                existing_config = self.yaml.load(config_file)
+                
+            # Update existing structure with new values
+            def update_nested_dict(existing, new):
+                for key, value in new.items():
+                    if isinstance(value, dict) and key in existing and isinstance(existing[key], dict):
+                        update_nested_dict(existing[key], value)
+                    else:
+                        existing[key] = value
+                        
+            update_nested_dict(existing_config, self.config)
+            final_config = existing_config
+        else:
+            final_config = self.config
+            
+        # Save while preserving structure and comments
+        with open(config_path, "w", encoding='utf-8') as config_file:
+            self.yaml.dump(final_config, config_file)

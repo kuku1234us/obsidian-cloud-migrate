@@ -23,6 +23,19 @@ This document outlines the required functionalities to be implemented in the **O
 - **Status and Logs**:
   - Display a status area to provide real-time updates, such as files being processed or errors.
   - Include a log viewer to show detailed logs of all upload activities.
+- **Settings Page**:
+  - Display a list of settings options:
+    - **AWS Credentials**:
+      - AWS Access Key ID input field (stored in `.env`)
+      - AWS Secret Access Key input field (stored in `.env`)
+      - AWS Region input field (stored in `.env`)
+    - **Cloud Storage Configuration**:
+      - S3 Bucket Name input field
+      - S3 Subfolder Path input field
+      - CloudFront Base URL input field
+    - **Security**:
+      - Securely store sensitive credentials in `.env` file
+      - Provide option to test AWS connectivity
 
 ### 2. AWS S3 + CloudFront Integration
 
